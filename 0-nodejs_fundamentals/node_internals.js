@@ -10,9 +10,6 @@
 // libuv:
 // The implementations of the node.js API's can be found here
 
-// Asynchronous I/O: It's a procees by which the V8 engine passes node.js APIs to libuv 
-// while it continues to run other codes in the background
-
 // Non-blocking functions:
 // codes that runs Asynchronously
 
@@ -25,4 +22,5 @@
 // Multi-threaded:
 // functions or states share different call stacks
 
-
+// Asynchronous I/O: It's a procees by which the V8 engine passes node.js APIs to libuv 
+// while it continues to run other codes in the background

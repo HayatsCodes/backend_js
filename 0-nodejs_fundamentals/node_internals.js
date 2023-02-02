@@ -24,7 +24,8 @@
 
 // Asynchronous I/O: It's a procees by which the V8 engine passes node.js APIs to libuv 
 // while it continues to run other codes in the background.
-// This When the results of the functions are ready, they're then passed to the Event Loop
+// The asynchronous codes are placed in the event loop and 
+// When the results of the functions are ready, the event loop is notified and gets ready to executes it.
 // There are two main types of asynchronous I/O:
 // file system: this is handled  by the OS
 // network: 

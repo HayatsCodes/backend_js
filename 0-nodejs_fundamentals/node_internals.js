@@ -2,7 +2,7 @@
 // It executes basic javascript codes
 
 // Node.js APIs:
-// These are built-in node.js functions that are not part of the core javascript
+// These are built-in node.js functions that are not part of the core javascript language
 
 //  Node.js Bindings:
 // This passes node.js APIs to libuv for executionn
@@ -18,4 +18,11 @@
 
 // Blocking functions:
 // codes that run synchronously
+
+// Single threaded:
+// In this, functions share the same call stack
+
+// Multi-threaded:
+// functions or states share different call stacks
+
 

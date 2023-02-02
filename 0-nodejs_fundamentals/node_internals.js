@@ -62,3 +62,5 @@
 
 // The Observer design Pattern:
 // These are proven approaches to solving problems that appears more than once in programming/applications
+
+// 

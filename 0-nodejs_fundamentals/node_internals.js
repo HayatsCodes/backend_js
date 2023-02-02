@@ -1,4 +1,7 @@
 // V8 Engine:
 // It executes basic javascript codes
+
 // Node.js APIs:
-// T
+// These are built-in node-js functions that are not part of javascript
+
+// 

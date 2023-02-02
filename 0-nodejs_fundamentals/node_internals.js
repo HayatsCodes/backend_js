@@ -26,6 +26,7 @@
 // while it continues to run other codes in the background.
 // The asynchronous codes are placed in the event loop for execution and 
 // When the results of the functions are ready, the event loop is notified.
-// There are two main types of asynchronous I/O, ehich are th:
+// There are two main types of asynchronous I/O, which are the systems that helps get asynchronous code get done.
+// they are:
 // file system: this is handled  by the OS
 // network: 

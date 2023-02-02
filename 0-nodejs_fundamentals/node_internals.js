@@ -50,4 +50,4 @@
 // setImmediate: executes immediately
 
 // I/O callbacks:
-// This is the second event loop phase thathandles I/O functions like files 
+// This is the second event loop phase that handles I/O functions like files system, networks e.t.c

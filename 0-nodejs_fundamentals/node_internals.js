@@ -36,3 +36,5 @@
 // It's executes code along side nodejs main thread which handles both the V8 engine and the event loop.
 // It provides a minimum of 4 threads and a maximum of 8 threads with all of them waiting for file system asynchronous I/O codes.
 
+// Event Phase Loop:
+// 

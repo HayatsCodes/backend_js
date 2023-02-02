@@ -67,4 +67,4 @@
 // This is used to create subjects which emits events that their observer can listen to.
 
 // Observers:
-//  They listen for events 
+// They listen for events on event emitters

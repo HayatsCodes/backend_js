@@ -39,6 +39,9 @@
 // Event Phase Loop:
 // This are the different phases of an event loop that's has their own call back queues.
 
+// Event loop tick:
+// This is one event loop cycle over all the 
+
 // Timers:
 // This is an event loop phase that handles timing functions
 // There are three types of timers:

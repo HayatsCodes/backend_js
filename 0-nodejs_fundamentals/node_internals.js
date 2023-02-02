@@ -60,4 +60,5 @@
 
 // Node.js is best at I/O heavy applications and is built for the web
 
-// The Observer Pattern
+// The Observer design Pattern:
+// These are proven approaches to solving problems that appears more than once in programming/applications

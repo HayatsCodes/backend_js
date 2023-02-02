@@ -43,4 +43,5 @@
 // This is an event loop phase that handles timing functions
 // There are three types of timers:
 // setTimeout: executes once in a specific time
-// setInterval
+// setInterval: executes multiple times between a specific time
+// setImmediate: executes immediately

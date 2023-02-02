@@ -5,4 +5,3 @@ if (mission === 'learn') {
 } else {
     console.log(`Is ${mission} really more fun`);
 }
-console.log(global.__filename);

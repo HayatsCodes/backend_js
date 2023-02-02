@@ -58,3 +58,4 @@
 // Close Callbacks:
 // This is the last event loop phase that handles closing of files or network connections
 
+// Node.js is best at I/O heavy applications and is built for the web

@@ -64,4 +64,4 @@
 // These are proven approaches to solving problems that appears more than once in programming/applications
 
 // Event Emitters:
-// This is used to create subjects 
+// This is used to create subjects which emits events that their observer can listen to.

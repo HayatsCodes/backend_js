@@ -43,10 +43,11 @@
 // This is one event loop cycle over all the event loop phases
 
 // Timers:
-// This is the first  that handles timing functions
+// This is the first event loop phase that handles timing functions
 // There are three types of timers:
 // setTimeout: executes once in a specific time
 // setInterval: executes multiple times between a specific time
 // setImmediate: executes immediately
 
-// I/O callbacks
+// I/O callbacks:
+// This is the second event loop phase thathandles I/O functions like files 

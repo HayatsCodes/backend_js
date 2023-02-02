@@ -10,4 +10,4 @@
 // libuv:
 // The implementations of the node.js API's can be found here
 
-// Asynchronous I/O: It's a procees by which the v8 engine passes 
+// Asynchronous I/O: It's a procees by which the v8 engine passes node.js APIs to libuv while it continues to run other codes in the background

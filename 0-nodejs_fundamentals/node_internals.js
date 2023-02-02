@@ -33,4 +33,5 @@
 
 // Thread Pool:
 // This takes advantage of the multi-threaded libuv that's written in c++.
-// It's works along 
+// It's executes code along side nodejs main thread which handles both the V8 engine and the event loop.
+// 

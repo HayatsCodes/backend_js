@@ -28,5 +28,5 @@
 // When the results of the functions are ready, the event loop is notified.
 // There are two main types of asynchronous I/O, which are the systems that helps get asynchronous code get done.
 // they are:
-// network: this is handled  by the OS
-// net
+// network: these are handled  by the OS
+// file system: this is get done by the thread pool

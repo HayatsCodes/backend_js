@@ -40,11 +40,13 @@
 // This are the different phases of an event loop that's has their own call back queues.
 
 // Event loop tick:
-// This is one event loop cycle over all the 
+// This is one event loop cycle over all the event loop phases
 
 // Timers:
-// This is an event loop phase that handles timing functions
+// This is the first  that handles timing functions
 // There are three types of timers:
 // setTimeout: executes once in a specific time
 // setInterval: executes multiple times between a specific time
 // setImmediate: executes immediately
+
+// I/O callbacks

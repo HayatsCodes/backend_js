@@ -31,4 +31,6 @@
 // network: these are handled  by the OS
 // file system: this is get done by the thread pool
 
-// Thread Pool: 
+// Thread Pool:
+// This takes advantage of the multi-threaded libuv that's written in c++.
+// It's works along 

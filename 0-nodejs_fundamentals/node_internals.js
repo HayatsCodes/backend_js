@@ -53,4 +53,7 @@
 // This is the second event loop phase that handles I/O functions like files system, networks e.t.c
 
 // setImmediate:
-// This is the third event loop phase that gets executed after the I/O call
+// This is the third event loop phase that gets executed after the I/O callbacks phase.
+
+// Close Callbacks:
+// This is the last event loop phase that handles closing of files or network connections

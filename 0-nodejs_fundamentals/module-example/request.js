@@ -7,4 +7,4 @@ function send(url, data) {
     console.log(`sending ${encryptedData}`)
 }
 
-console.log(mo)
+console.log(module);

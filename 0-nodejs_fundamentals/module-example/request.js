@@ -4,5 +4,5 @@ function encrypt(data) {
 
 function send(url, data) {
     const encryptedData = encrypt(data);
-    console.log('sending ${encryptedData}')
+    console.log(`sending ${encryptedData}`)
 }

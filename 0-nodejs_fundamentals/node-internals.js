@@ -69,4 +69,7 @@
 // Observers:
 // They listen for events on event emitters
 
-const Event
+const EventEmitter = require('events');
+const celebrity = new EventEmitter();
+
+c

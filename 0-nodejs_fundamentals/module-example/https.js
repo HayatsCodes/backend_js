@@ -1,3 +1,4 @@
 function request(url, data) {
-    send
+    send(url, data);
+    read();
 }

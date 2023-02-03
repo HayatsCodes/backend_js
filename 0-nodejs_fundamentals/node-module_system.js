@@ -21,3 +21,9 @@ get('https://www.google.com', (res) => {
         console.log('No more data');
     });
 });
+
+// Node.js Caching:
+// Node stores loaded modules in memory so that they wouldn't be a need to reload it again.
+
+// index.js:
+// It's a special case in node.js that allows a folder to act as a module

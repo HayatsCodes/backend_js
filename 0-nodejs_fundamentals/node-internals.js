@@ -72,4 +72,6 @@
 const EventEmitter = require('events');
 const celebrity = new EventEmitter();
 
-c
+celebrity.on('race win', function() {
+    console.log('Congratulations! You are the best!');
+});

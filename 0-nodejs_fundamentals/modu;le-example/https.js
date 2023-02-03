@@ -1,1 +1,3 @@
-fun
+function request(url, data) {
+    
+}

@@ -9,5 +9,5 @@ function send(url, data) {
 
 // console.log(module);
 module.exports = {
-    send
+    send: send,
 }

@@ -6,3 +6,4 @@ function request(url, data) {
     return read();
 }
 
+const res = request('https://google.com', 'hello');

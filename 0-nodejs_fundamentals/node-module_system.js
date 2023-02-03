@@ -1,3 +1,5 @@
 const http = require('http');
 
-http.request('www.google.com', ())
+http.request('www.google.com', (res) => {
+    
+})

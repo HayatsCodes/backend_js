@@ -75,3 +75,5 @@ const celebrity = new EventEmitter();
 celebrity.on('race win', function() {
     console.log('Congratulations! You are the best!');
 });
+
+celebrity.em

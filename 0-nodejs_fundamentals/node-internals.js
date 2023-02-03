@@ -76,4 +76,4 @@ celebrity.on('race win', function() {
     console.log('Congratulations! You are the best!');
 });
 
-celebrity.em
+celebrity.emit('race win!');

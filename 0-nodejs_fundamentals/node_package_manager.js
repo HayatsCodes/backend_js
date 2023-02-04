@@ -1,1 +1,1 @@
-// 
+// A module is a file that contains code that can be exported

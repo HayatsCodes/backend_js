@@ -2,6 +2,6 @@ function print(data) {
     console.log(data);
 }
 
-module.exports(
+module.export(
     print,
 )

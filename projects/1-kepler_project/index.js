@@ -4,7 +4,7 @@ const fs = require('fs');
 const results = [];
 
 fs.createReadStream('kepler_data.csv')
-    .pipe(csv-parse.parse({
+    .pipe(parser({
         comment: '#',
         colums: true,
     }))

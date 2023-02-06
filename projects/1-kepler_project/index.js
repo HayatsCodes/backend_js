@@ -1,7 +1,3 @@
-function print(data) {
-    console.log(data);
-}
-
 const csv = require('csv-parse');
 const fs = require('fs');
 

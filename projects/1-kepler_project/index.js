@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const results = [];
 
-fs.createReadStream('kepler_dataa.csv')
+fs.createReadStream('kepler_data.csv')
     .on('data', (data) => {
         results.push(data);
     })

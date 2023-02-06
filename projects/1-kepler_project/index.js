@@ -14,6 +14,7 @@ fs.createReadStream('kepler_data.csv')
         columns: true,
     }))
     .on('data', (data) => {
+        
         results.push(data);
     })
     .on('error', (err) => {

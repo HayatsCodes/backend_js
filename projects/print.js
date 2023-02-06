@@ -4,4 +4,4 @@ function print(data) {
     console.log(data);
 }
 
-modu
+module.exports()

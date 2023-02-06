@@ -11,7 +11,7 @@ const results = [];
 fs.createReadStream('kepler_data.csv')
     .pipe(csv.parse({
         comment: '#',
-        colums: true,
+        columns: true,
     }))
     .on('data', (data) => {
         results.push(data);

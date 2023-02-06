@@ -7,5 +7,7 @@ fs.createReadStream('kepler_data.csv')
     .on('data', (data) => {
         results.push(data);
     })
-    .on()
+    .on('end', () => {
+        console.log(results)
+    })
     

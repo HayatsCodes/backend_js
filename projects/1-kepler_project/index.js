@@ -1,4 +1,5 @@
 const parser = require('csv-parse');
+print(parser)
 const fs = require('fs');
 
 const results = [];

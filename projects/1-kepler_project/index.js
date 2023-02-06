@@ -6,7 +6,7 @@ function isHabitablePlanet(planet) {
     return planet['koi_disposition'] === 'CONFIRMED'
 }
 
-const habitable = [];
+const habitablePlanets = [];
 
 fs.createReadStream('kepler_data.csv')
     .pipe(csv.parse({
@@ -15,13 +15,13 @@ fs.createReadStream('kepler_data.csv')
     }))
     .on('data', (data) => {
         if (isHabitablePlanet(data)) {
-            habitable.push(data);
+            habitablePlanets.push(data);
         }
     })
     .on('error', (err) => {
         console.log(err);
     })
     .on('end', () => {
-        console.log(habitable);
+        console.log(habitablePlanets);
         console.log('done');
     });

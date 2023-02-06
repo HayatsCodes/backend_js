@@ -3,7 +3,7 @@ function print(data) {
 }
 
 const csv = require('csv-parse');
-print(csv.parse)
+print(csv.parse())
 const fs = require('fs');
 
 const results = [];

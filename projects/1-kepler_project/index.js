@@ -1,3 +1,4 @@
+const {print }
 const csv = require('csv-parse');
 const fs = require('fs');
 

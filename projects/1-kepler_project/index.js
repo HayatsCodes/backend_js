@@ -2,8 +2,6 @@ const { print } = require('../print')
 const csv = require('csv-parse');
 const fs = require('fs');
 
-print(csv);
-
 const results = [];
 
 fs.createReadStream('kepler_data.csv')

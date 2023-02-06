@@ -1,4 +1,4 @@
-const parse = require('csv-parse');
+const parses = require('csv-parse');
 const fs = require('fs');
 
 const results = [];

@@ -20,8 +20,9 @@ fs.createReadStream('kepler_data.csv')
         }
     })
     .on('error', (err) => {
-        console.log(err);
+        print(err);
     })
     .on('end', () => {
-        console.log(`${habitablePlanets.length} habitable planets found!`);
+        
+        print(`${habitablePlanets.length} habitable planets found!`);
     });

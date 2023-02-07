@@ -20,3 +20,4 @@
 // 1. Headers: defines meta data (extra info) for the data being retrieved e.g content-type: application/json
 // 2. Body:  The data that is being retrieved from the server e.g {text:"hi", photo:"wave.jpg"}
 // 3. Status Code: The status of the response e.g 200 for success
+//      Status codes are grouped into five namely:

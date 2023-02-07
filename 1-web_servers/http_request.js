@@ -17,6 +17,6 @@
 // 4. Headers: defines meta data (extra info) for the data being sent
 
 // The 3 parts of a http response:
-// 1. Headers: defines meta data (extra info) for the data being sent
+// 1. Headers: defines meta data (extra info) for the data being retrieved e.g content-type: application/json
 // 2. Body:  The data that is being retrieved from the server e.g {text:"hi", photo:"wave.jpg"}
-// 
+// 3. Status Code: 

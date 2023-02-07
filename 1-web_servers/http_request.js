@@ -17,4 +17,6 @@
 // 4. Headers: defines meta data (extra info) for the data being sent
 
 // The 3 parts of a http response:
-// 1. Body:  The data that is being sent to the server e.g {text:"hello", photo:"smile.jpg"}
+// 1. Headers: defines meta data (extra info) for the data being sent
+// 2. Body:  The data that is being retrieved from the server e.g {text:"hi", photo:"wave.jpg"}
+// 

@@ -24,4 +24,5 @@
 //      1. informational responses (100 - 199): These are mostly internal responses that the developer need not understand
 //      2. successful responses (200 - 299)
 //      3. redirects (300 - 399)
-//      
+//      4. client errors (400 - 499)
+//      5. Server errors (500 - 599)

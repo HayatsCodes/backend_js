@@ -21,4 +21,7 @@
 // 2. Body:  The data that is being retrieved from the server e.g {text:"hi", photo:"wave.jpg"}
 // 3. Status Code: The status of the response e.g 200 for success
 // Status codes are grouped into five classes:
-//      1. informational responses (100 - 199): These are mostly internal 
+//      1. informational responses (100 - 199): These are mostly internal responses that the developer need not understand
+//      2. successful responses (200 - 299)
+//      3. redirects (300 - 399)
+//      

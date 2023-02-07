@@ -14,4 +14,4 @@
 // 1. Method: defines the operation that the browser wants to perform on the server e.g post/...
 // 2. Path: defines the resource that the browser wants to access in the server. e.g .../messages/
 // 3. Body: The data that is being sent to the server e.g {text:"hello", photo:"smile.jpg"}
-// 4. Headers: defines the meta data (extra info) for the data being sent
+// 4. Headers: defines meta data (extra info) for the data being sent

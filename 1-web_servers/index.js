@@ -28,11 +28,9 @@ server.on('request', (req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         if (items.length === 3) {
-
-        } else {
-            res.end(JSON.stringify({
             
-            }));
+        } else {
+            res.end(JSON.stringify(friends));
         }
 
     } else if (items[1] === 'messages') {

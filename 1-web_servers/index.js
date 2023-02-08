@@ -22,7 +22,7 @@ const friends = [
 server.on('request', (req, res) => {
     const items = req.url.split('/');
     if (req.method === 'POST' && items[1] === 'friends') {
-
+        
     }
     if (req.method === 'GET' && items[1] === 'friends') {
         // res.writeHead(200, {

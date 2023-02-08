@@ -4,6 +4,8 @@ const PORT = 3000;
 
 const server = http.createServer();
 
+
+
 server.on('request', (req, res) => {
     if (req.url === '/friends') {
         // res.writeHead(200, {

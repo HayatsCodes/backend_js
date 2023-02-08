@@ -6,3 +6,5 @@
 // Same Origin Policy:
 // Restricts what you're allowed to load when you're browsing the internet
 
+// CORS ():
+// 

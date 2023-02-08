@@ -24,7 +24,8 @@ server.on('request', (req, res) => {
     if (req.method === 'POST' && items[1] === 'friends') {
         req.on('data', (data) => {
             const friend = data.toString();
-            console.log(``)
+            console.log(`Requests: ${friend}`);
+            friends.push(JSON.parse(friend));
         })
     }
     if (req.method === 'GET' && items[1] === 'friends') {

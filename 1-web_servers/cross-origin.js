@@ -8,5 +8,3 @@
 
 // CORS (Cross Origin Resource Sharing):
 // It's a way of relaxing the restrictions that the same origin policy puts on us developers.
-
-// 

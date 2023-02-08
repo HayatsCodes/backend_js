@@ -4,4 +4,4 @@
 // 3. Port: where the application we want to access lives in the server
 
 // Same Origin Policy:
-// Restricts what 
+// Restricts what you're 

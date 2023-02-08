@@ -31,7 +31,8 @@ server.on('request', (req, res) => {
             if (friends[items[2]]) {
                 res.end(JSON.stringify(friends[items[2]]));
             } else {
-                
+                res.statusCode = 404;
+                res.end();
             }
         } else {
             res.end(JSON.stringify(friends));

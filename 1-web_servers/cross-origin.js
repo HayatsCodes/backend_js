@@ -11,4 +11,4 @@
 // CORS allows for whitelisting, which is the practice of explicitly allowing access to a particular privilege or service. it is the opposite of blacklisting.
 
 // Acces-Control-Allow-Origin header:
-// This is used in whitelisting sites 
+// This is used in whitelisting sites to a server.

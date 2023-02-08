@@ -28,6 +28,8 @@ server.on('request', (req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
 
+        
+
         res.end(JSON.stringify({
             id: 1,
             name: 'Sir Issac Newton',

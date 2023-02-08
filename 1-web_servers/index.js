@@ -27,13 +27,14 @@ server.on('request', (req, res) => {
         // });
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
+        if (items.length === 3) {
 
-        
+        } else {
+            res.end(JSON.stringify({
+            
+            }));
+        }
 
-        res.end(JSON.stringify({
-            id: 1,
-            name: 'Sir Issac Newton',
-        }));
     } else if (items[1] === 'messages') {
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');

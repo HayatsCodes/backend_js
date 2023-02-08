@@ -26,7 +26,6 @@ server.on('request', (req, res) => {
         res.write('</ul>');
         res.write('</body>');
         res.write('</html>');
-
         res.end();
     }
    

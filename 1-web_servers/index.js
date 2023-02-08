@@ -21,7 +21,8 @@ const friends = [
 
 server.on('request', (req, res) => {
     const items = req.url.split('/');
-    if ( items[1] === 'friends') {
+    if
+    if (req.method === 'GET' && items[1] === 'friends') {
         // res.writeHead(200, {
         //     'Content-Type': 'application/json',
         // });

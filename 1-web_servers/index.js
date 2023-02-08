@@ -20,8 +20,8 @@ const friends = [
 ]
 
 server.on('request', (req, res) => {
-    
-    if (req.url === '/friends') {
+    const items = req.url.split('/');
+    if (items[1] === 'friends') {
         // res.writeHead(200, {
         //     'Content-Type': 'application/json',
         // });
@@ -32,7 +32,7 @@ server.on('request', (req, res) => {
             id: 1,
             name: 'Sir Issac Newton',
         }));
-    } else if (req.url === '/messages') {
+    } else if (items[2] === 'messages') {
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');
         res.write('<body>');

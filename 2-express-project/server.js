@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
     res.send('Heeellooooo');
 });
 
-app.get('/messages', (req, ))
+app.get('/messages', (req, res) => {
+    res.send('<ul><li>Helloo Albert!</li></ul>')
+});
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);

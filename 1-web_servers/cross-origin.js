@@ -7,4 +7,6 @@
 // Restricts what you're allowed to load when you're browsing the internet
 
 // CORS (Cross Origin Resource Sharing):
-// It's a way of relaxing the restrictions that the same origin policy 
+// It's a way of relaxing the restrictions that the same origin policy puts on us developers.
+
+// 

@@ -28,7 +28,7 @@ server.on('request', (req, res) => {
         res.write('</html>');
         res.end();
     } else {
-        res.statusCode = 404;
+        res.statusCode = 400;
     }
    
 });

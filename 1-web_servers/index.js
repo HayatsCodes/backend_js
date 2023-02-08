@@ -32,7 +32,7 @@ server.on('request', (req, res) => {
             id: 1,
             name: 'Sir Issac Newton',
         }));
-    } else if (items[2] === 'messages') {
+    } else if (items[1] === 'messages') {
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');
         res.write('<body>');

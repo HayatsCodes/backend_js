@@ -6,5 +6,5 @@
 // Same Origin Policy:
 // Restricts what you're allowed to load when you're browsing the internet
 
-// CORS ():
-// 
+// CORS (Cross Origin Resource Sharing):
+// It's a way of relaxing the restrictions that the same origin policy 

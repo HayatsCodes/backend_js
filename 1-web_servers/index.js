@@ -28,7 +28,9 @@ server.on('request', (req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         if (items.length === 3) {
-            
+            if () {
+                
+            }
             res.end(JSON.stringify(friends[items[2]]));
         } else {
             res.end(JSON.stringify(friends));

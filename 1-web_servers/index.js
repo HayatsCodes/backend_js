@@ -9,4 +9,6 @@ const server = http.createServer((req, res) => {
     res.end('Hello! respond finished!');
 });
 
-server.listen()
+server.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
+});

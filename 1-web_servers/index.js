@@ -20,6 +20,7 @@ const friends = [
 ]
 
 server.on('request', (req, res) => {
+    
     if (req.url === '/friends') {
         // res.writeHead(200, {
         //     'Content-Type': 'application/json',

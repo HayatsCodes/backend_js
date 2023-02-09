@@ -7,6 +7,21 @@ const app = express();
 
 const PORT = 3000;
 
+const friends = [
+    {
+        id: 0,
+        name: 'Nikola Tesla',
+    },
+    {
+        id: 1,
+        name: 'Sir Issac Newton',
+    },
+    {
+        id: 2,
+        name: 'Albert Einstein',
+    }
+]
+
 app.use((req, res, next) => {
     const start = Date.now();
     next();
@@ -16,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.post('/friends', friendsController.postFriends);
+app.post('/friends', fr);
 
 app.get('/friends', friendsController.getFriends);
 

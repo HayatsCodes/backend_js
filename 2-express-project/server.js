@@ -23,7 +23,9 @@ app.get('/friends', (req, res) => {
     res.json(friends);
 });
 
-
+app.get('/friends:friendId', (req, res) => {
+    const friend = 
+})
 
 app.get('/messages', (req, res) => {
     res.send('<ul><li>Helloo Albert!</li></ul>')

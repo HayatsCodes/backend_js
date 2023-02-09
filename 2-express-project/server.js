@@ -19,7 +19,9 @@ const friends = [
     }
 ]
 
-
+app.use((req, res, next) => {
+    console.log(`${}`)
+})
 
 app.get('/friends', (req, res) => {
     res.json(friends);

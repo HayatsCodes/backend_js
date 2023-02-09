@@ -29,6 +29,9 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 app.post('/friends', (req, res) => {
+    if(!req.body.name) {
+        
+    }
     const newFriend = {
         name: req.body.name,
         id: friends.length

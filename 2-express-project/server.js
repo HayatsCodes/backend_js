@@ -19,6 +19,8 @@ const friends = [
     }
 ]
 
+
+
 app.get('/friends', (req, res) => {
     res.json(friends);
 });
@@ -48,7 +50,7 @@ app.listen(PORT, () => {
 });
 
 // Route
-// the path 
+// the path to a resource in a server
 
 // Route Handlers:
 // Handles possible requests from the user

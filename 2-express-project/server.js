@@ -91,4 +91,4 @@ app.listen(PORT, () => {
 // example: app.get(route, (req, res) => {})
 
 // Model-View-Controller:
-// This is a software design pattern used f
+// This is a software design pattern used for developing user interfaces that divides the related program logic into three interconnected elements.

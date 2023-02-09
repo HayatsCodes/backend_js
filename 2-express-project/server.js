@@ -52,4 +52,5 @@ app.listen(PORT, () => {
 // they are special functions that runs between a request and a response coming out of an express api
 
 // Middleware endpoint:
-// This is the handler that matches
+// This is the handler that matches the route the user is requesting
+// it uses the app.method function rather than 

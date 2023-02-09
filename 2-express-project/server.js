@@ -26,7 +26,7 @@ app.use((req, res, next) => {
     console.log(`${req.method} ${req.url} ${delta}ms`);
 });
 
-
+ 
 
 app.get('/friends', (req, res) => {
     res.json(friends);

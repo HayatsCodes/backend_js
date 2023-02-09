@@ -51,3 +51,5 @@ app.listen(PORT, () => {
 // allows developers to add features to their express server
 // they are special functions that runs between a request and a response coming out of an express api
 
+// Middleware endpoint:
+// This is the handler that matches

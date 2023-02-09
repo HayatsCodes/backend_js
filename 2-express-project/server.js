@@ -49,4 +49,4 @@ app.listen(PORT, () => {
 
 // Middleware:
 // allows developers to add features to their express server
-// they are special functions that runs between a request and a response from a server
+// they are special functions that runs between a request and a response coming out of an express api

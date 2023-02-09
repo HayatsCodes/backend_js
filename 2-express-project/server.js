@@ -45,9 +45,7 @@ app.post('/friends', (req, res) => {
     res.json(newFriend);
 });
 
-app.get('/friends', (req, res) => {
-    res.json(friends);
-});
+app.get('/friends', f);
 
 app.get('/friends/:friendId', (req, res) => {
     const friendId = Number(req.params.friendId);

@@ -16,4 +16,14 @@ function getFriends(req, res) {
     res.json(friends);
 }
 
-function getFriendsId
+function getFriendsId(req, res) {
+    const friendId = Number(req.params.friendId);
+    const friend  = friends[friendId];
+    if (friend) {
+        res.status(200).json(friend);
+    } else {
+        res.status(404).json({
+            error: 'friend does not exist'
+        })
+    }
+}

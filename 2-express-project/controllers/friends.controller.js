@@ -28,4 +28,8 @@ function getFriendsId(req, res) {
     }
 }
 
-module.exports('')
+module.exports = {
+    postFriends,
+    getFriends,
+    getFriendsId
+}

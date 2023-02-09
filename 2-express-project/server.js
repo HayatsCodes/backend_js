@@ -60,3 +60,4 @@ app.listen(PORT, () => {
 // it uses the app.method function rather than the app.use function, 
 // where method are the common http methods like get, put e.t.c
 // example: app.get((req, res) => {})
+

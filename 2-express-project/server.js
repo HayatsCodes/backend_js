@@ -24,12 +24,13 @@ app.get('/friends', (req, res) => {
 });
 
 app.get('/friends:friendId', (req, res) => {
-    const friend = Number(req.params.friendId);
+    const friendId = Number(req.params.friendId);
+    const friend  = friends[friendId];
     if (friend) {
         res.status(200).json(friend);
     } else {
         res.status(404).json({
-            error: 'friend '
+            error: 'friend does not exist'
         })
     }
 })

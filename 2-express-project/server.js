@@ -24,7 +24,10 @@ app.get('/friends', (req, res) => {
 });
 
 app.get('/friends:friendId', (req, res) => {
-    const friend = 
+    const friend = Number(req.params.friendId);
+    if (friend) {
+        res.status
+    }
 })
 
 app.get('/messages', (req, res) => {

@@ -9,4 +9,4 @@ function postMessages(req, res) {
 module.exports = {
     getMessages,
     postMessages,
-}
+};

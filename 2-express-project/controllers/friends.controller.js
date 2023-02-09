@@ -1,1 +1,1 @@
-function get friends 
+function postFriends()

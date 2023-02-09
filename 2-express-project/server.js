@@ -28,7 +28,11 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.post('/friends', ())
+app.post('/friends', (req, res) => {
+    const newFriend = {
+        name: req.body.name,
+    }
+});
 
 app.get('/friends', (req, res) => {
     res.json(friends);

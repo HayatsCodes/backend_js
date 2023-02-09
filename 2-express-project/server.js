@@ -47,6 +47,9 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
 
+// Route Handlers:
+// Handles the the possible request from the client sides
+
 // Middleware:
 // allows developers to add features to their express server
 // they are special functions that runs between a request and a response coming out of an express api
@@ -60,4 +63,3 @@ app.listen(PORT, () => {
 // it uses the app.method function rather than the app.use function, 
 // where method are the common http methods like get, put e.t.c
 // example: app.get((req, res) => {})
-

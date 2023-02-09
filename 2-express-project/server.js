@@ -33,6 +33,7 @@ app.post('/friends', (req, res) => {
         name: req.body.name,
         id: friends.length
     }
+    friends.
 });
 
 app.get('/friends', (req, res) => {

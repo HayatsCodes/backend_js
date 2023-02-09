@@ -59,4 +59,4 @@ app.listen(PORT, () => {
 // This is the handler that matches the route the user is requesting
 // it uses the app.method function rather than the app.use function, 
 // where method are the common http methods like get, put e.t.c
-// 
+// example:

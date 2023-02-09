@@ -62,9 +62,7 @@ app.get('/messages', (req, res) => {
     res.send('<ul><li>Helloo Albert!</li></ul>')
 });
 
-app.post('/messages', (req, res) => {
-    console.log('Updating messages...');
-});
+app.post('/messages', );
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);

@@ -26,7 +26,9 @@ app.use((req, res, next) => {
     console.log(`${req.method} ${req.url} ${delta}ms`);
 });
 
- 
+app.use(express.json());
+
+app.post('/friends', ())
 
 app.get('/friends', (req, res) => {
     res.json(friends);

@@ -94,4 +94,4 @@ app.listen(PORT, () => {
 // This is a software design pattern used for developing user interfaces that divides the related program logic into three interconnected elements.
 // Controller: This is used to manipulate the models in a server
 // Model: This represents how the api sees data e.g (a function that queries users data in a data base)
-// View: This is what is returned back to the user.
+// View: This is where the user gets a response to its request

@@ -58,7 +58,9 @@ app.get('/friends/:friendId', (req, res) => {
     }
 })
 
-app.get('/messages', );
+app.get('/messages', (req, res) => {
+    res.send('<ul><li>Helloo Albert!</li></ul>')
+});
 
 app.post('/messages', (req, res) => {
     console.log('Updating messages...');

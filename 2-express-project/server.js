@@ -91,4 +91,4 @@ app.listen(PORT, () => {
 // example: app.get(route, (req, res) => {})
 
 // Model-View-Controller:
-// 
+// This is a software design pattern used f

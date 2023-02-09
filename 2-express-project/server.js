@@ -31,6 +31,7 @@ app.use(express.json());
 app.post('/friends', (req, res) => {
     const newFriend = {
         name: req.body.name,
+        id: friends.length
     }
 });
 

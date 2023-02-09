@@ -31,23 +31,11 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.post('/friends', (req, res) => {
-    if(!req.body.name) {
-        return res.status(400).json({
-            error: 'Missing friend name'
-        })
-    }
-    const newFriend = {
-        name: req.body.name,
-        id: friends.length
-    }
-    friends.push(newFriend);
-    res.json(newFriend);
-});
+app.post('/friends', friendsController.postFriends);
 
 app.get('/friends', friendsController.getFriends);
 
-app.get('/friends/:friendId', fri);
+app.get('/friends/:friendId', friendsController.getFriendsId);
 
 app.get('/messages', messagesController.getMessages);
 

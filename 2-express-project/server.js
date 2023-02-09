@@ -47,8 +47,11 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
 
+// Route
+// 
+
 // Route Handlers:
-// Handles the the possible request from the client sides
+// Handles possible requests from the user
 
 // Middleware:
 // allows developers to add features to their express server

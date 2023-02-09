@@ -20,7 +20,7 @@ const friends = [
 ]
 
 app.get('/friends', (req, res) => {
-    res.send('Heeellooooo');
+    res.json(friends);
 });
 
 app.get('/messages', (req, res) => {

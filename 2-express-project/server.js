@@ -50,7 +50,8 @@ app.listen(PORT, () => {
 // Middleware:
 // allows developers to add features to their express server
 // they are special functions that runs between a request and a response coming out of an express api
-// 
+// it uses the app.use function and a call back function that accepts three parameters, namely:
+// req, res and next
 
 // Middleware endpoint:
 // This is the handler that matches the route the user is requesting

@@ -61,11 +61,9 @@ app.get('/friends/:friendId', (req, res) => {
     }
 })
 
-app.get('/messages', (req, res) => {
-    res.send('<ul><li>Helloo Albert!</li></ul>')
-});
+app.get('/messages', messagesController.getMessages);
 
-app.post('/messages', );
+app.post('/messages', messagesController.postMessages);
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);

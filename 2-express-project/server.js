@@ -1,6 +1,7 @@
 const express = require('express');
 
-const friendsController = require('./')
+const friendsController = require('./controllers/friends.controller');
+const messa
 
 const app = express();
 

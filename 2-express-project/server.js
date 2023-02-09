@@ -92,3 +92,4 @@ app.listen(PORT, () => {
 
 // Model-View-Controller:
 // This is a software design pattern used for developing user interfaces that divides the related program logic into three interconnected elements.
+// Model: This represents how the api sees the data

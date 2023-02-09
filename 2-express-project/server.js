@@ -59,7 +59,7 @@ app.get('/friends/:friendId', (req, res) => {
             error: 'friend does not exist'
         })
     }
-})
+});
 
 app.get('/messages', messagesController.getMessages);
 

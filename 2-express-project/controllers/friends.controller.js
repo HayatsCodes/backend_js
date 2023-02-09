@@ -15,3 +15,5 @@ function postFriends(req, res) {
 function getFriends(req, res) {
     res.json(friends);
 }
+
+function getFriendsId

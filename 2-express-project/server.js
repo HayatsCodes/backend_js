@@ -53,10 +53,10 @@ app.listen(PORT, () => {
 // it uses the app.use function and a call back function that accepts three parameters, namely:
 // req, res and next. Where req and res is used to process the request and the response coming fom an express api, while
 // next is a function used to move to the next middlewrae
-// example: app.use((req, res, next) {})
+// example: app.use((req, res, next) => {})
 
 // Middleware endpoint:
 // This is the handler that matches the route the user is requesting
 // it uses the app.method function rather than the app.use function, 
 // where method are the common http methods like get, put e.t.c
-// example:
+// example: app.get((req, res) => {})

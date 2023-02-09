@@ -48,7 +48,7 @@ app.listen(PORT, () => {
 });
 
 // Route
-// 
+// the path 
 
 // Route Handlers:
 // Handles possible requests from the user

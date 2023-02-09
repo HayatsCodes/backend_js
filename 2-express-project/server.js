@@ -11,7 +11,7 @@ const friends = [
     },
     {
         id: 1,
-        name: 'Sir Issac Newtoon',
+        name: 'Sir Issac Newton',
     },
     {
         id: 2,
@@ -46,3 +46,5 @@ app.post('/messages', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });
+
+// 

@@ -27,3 +27,5 @@ function getFriendsId(req, res) {
         })
     }
 }
+
+module.exports('')

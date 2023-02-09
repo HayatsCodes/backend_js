@@ -11,3 +11,7 @@ function postFriends(req, res) {
     friends.push(newFriend);
     res.json(newFriend);
 }
+
+function getFriends(req, res) {
+    res.json(friends);
+}

@@ -25,7 +25,11 @@ app.use('/site', express.static(path.join(__dirname,'public')));
 app.use(express.json());
 
 
-app.get('/', (req, res));
+app.get('/', (req, res) => {
+    res.render('index', {
+        title: ''
+    })
+});
 app.use('/friends', friendsRouter);
 
 app.use('/messages',messagesRouter);

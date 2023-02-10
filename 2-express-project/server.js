@@ -99,4 +99,5 @@ app.listen(PORT, () => {
 // PATCH -> update/modify
 // DELETE -> delete
 
-// 
+// Template Engine:
+// This is used as a placeholder ehen serving files to a client

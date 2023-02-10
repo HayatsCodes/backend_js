@@ -80,4 +80,4 @@ app.listen(PORT, () => {
 // This are the sets of APIS that follows the REST API pattern
 
 // CRUD (Create, Read, Update, Delete):
-// The four basic operations that can be performrd on a data.
+// The four basic operations that can be performed on a data.

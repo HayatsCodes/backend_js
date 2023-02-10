@@ -64,6 +64,7 @@ app.listen(PORT, () => {
 // REST:
 // REpresentational State Transfer
 // Representational and State:  How the server makes data available
+// Transfer: How it's transffered back to the user
 // 1. endpoints being plural nouns
 // 2. 
 

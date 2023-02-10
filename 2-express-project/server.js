@@ -79,4 +79,5 @@ app.listen(PORT, () => {
 // RESTFUL APIS:
 // This are the sets of APIS that follows the REST API pattern
 
-// 
+// CRUD (Create, Read, Update, Delete):
+// The four basic operations that can be performrd on a data.

@@ -4,8 +4,9 @@ const friendsController = require('../controllers/friends.controller');
 
 const friendsRouter = express.Router();
 
-friendsRouter.use((req, res) => {
+friendsRouter.use((req, res, next) => {
     console.log(req.ip);
+    next();
 })
 
 friendsRouter.post('/', friendsController.postFriends);

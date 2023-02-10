@@ -24,9 +24,6 @@ app.use('/friends', friendsRouter);
 
 
 
-app.get('/messages', messagesController.getMessages);
-app.post('/messages', messagesController.postMessages);
-
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 });

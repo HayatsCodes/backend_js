@@ -73,7 +73,7 @@ app.listen(PORT, () => {
 // 4. Enables communication between a client and a server
 // 5. Requests are stateless and cacheable:
 //  a. stateless: each request is not connected to any state in the client side
-//  b. cacheable:
+//  b. cacheable: 
 
 // RESTFUL APIS:
 // This are the sets of APIS that follows the REST API pattern

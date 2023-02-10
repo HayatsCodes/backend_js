@@ -1,10 +1,14 @@
 body {
     padding: 50px;
-    background-color: ;
+    background-color: whitesmoke;
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a {
     color: #00B7FF;
+}
+
+img {
+    height: ;
 }

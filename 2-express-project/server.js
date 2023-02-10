@@ -1,7 +1,7 @@
 const express = require('express');
 
 const friendsRouter = require('./routes/friends.router');
-
+const messagesRouter = require('./routes/messages.router');
 
 const app = express();
 

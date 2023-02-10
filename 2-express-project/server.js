@@ -81,3 +81,6 @@ app.listen(PORT, () => {
 
 // CRUD (Create, Read, Update, Delete):
 // The four basic operations that can be performed on a data.
+// HTTP methods and their corresponding CRUD function:
+// POST -> create
+// R

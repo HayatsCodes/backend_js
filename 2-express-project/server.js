@@ -61,7 +61,10 @@ app.listen(PORT, () => {
 // This sis a mini application that organizes routes in an application into smaller groups
 // a router is created by using the express.Router() function
 
-// REST
+// REST:
+// 1. endpints being plural nouns
+// 2. 
 
 // RESTFUL APIS:
 // This are the sets of APIS that follows the REST API pattern
+

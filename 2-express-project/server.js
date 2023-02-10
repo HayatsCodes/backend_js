@@ -65,6 +65,7 @@ app.listen(PORT, () => {
 // REpresentational State Transfer
 // Representational and State:  How the server makes data available
 // Transfer: How it's transffered back to the user
+// Thus, REST is an api npatterns that describes how data is represented 
 // 1. endpoints being plural nouns
 // 2. 
 

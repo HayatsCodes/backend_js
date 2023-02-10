@@ -69,7 +69,8 @@ app.listen(PORT, () => {
 // Some of this ideas includes:
 // 1. The use of existing web standards (HTTP, JSON, URL);
 // 2. endpoints are collections of data and are named in plurals
-// 3. 
+// 3. Use GET, POST, PUT and DELETE functions to communicate what actions is being performed on the data
+// 4. 
 
 // RESTFUL APIS:
 // This are the sets of APIS that follows the REST API pattern

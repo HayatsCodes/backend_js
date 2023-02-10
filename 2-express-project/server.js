@@ -71,7 +71,7 @@ app.listen(PORT, () => {
 // 2. Endpoints are collections of data and are named in plurals
 // 3. Use GET, POST, PUT and DELETE functions to communicate what actions is being performed on the data
 // 4. Enables communication between a client and a server
-
+// 5. Requests are stateless and cacheable
 
 // RESTFUL APIS:
 // This are the sets of APIS that follows the REST API pattern

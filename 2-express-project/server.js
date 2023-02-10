@@ -20,11 +20,11 @@ app.use(express.json());
 
 const friendsRouter = express.Router();
 
-friendsRouter.post('/friends', friendsController.postFriends);
-friendsRouter.get('/friends', friendsController.getFriends);
-friendsRouter.get('/friends/:friendId', friendsController.getFriendsId);
+friendsRouter.post('/', friendsController.postFriends);
+friendsRouter.get('/', friendsController.getFriends);
+friendsRouter.get('/:friendId', friendsController.getFriendsId);
 
-app.use('',friendsRouter);
+app.use('/friends', friendsRouter);
 
 app.get('/messages', messagesController.getMessages);
 app.post('/messages', messagesController.postMessages);

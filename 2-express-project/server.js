@@ -27,8 +27,9 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.render('index', {
-        title: ''
-    })
+        title: 'My Friends Are VERYY Clever',
+        caption: ''
+    });
 });
 app.use('/friends', friendsRouter);
 

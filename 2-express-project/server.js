@@ -84,6 +84,6 @@ app.listen(PORT, () => {
 // HTTP methods and their corresponding CRUD function:
 // POST -> create (entire collection)
 // GET -> read
-// PUT -> update (a specific item in a collection)
-// PATCH -> update
+// PUT -> update/replace (a specific item in a collection)
+// PATCH -> update/modify
 // DELETE -> delete

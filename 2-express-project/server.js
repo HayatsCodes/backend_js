@@ -62,7 +62,7 @@ app.listen(PORT, () => {
 // a router is created by using the express.Router() function
 
 // REST:
-// R
+// REpresentational State Transfer
 // 1. endpoints being plural nouns
 // 2. 
 

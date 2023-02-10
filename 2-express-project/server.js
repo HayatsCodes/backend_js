@@ -63,6 +63,7 @@ app.listen(PORT, () => {
 
 // REST:
 // REpresentational State Transfer
+// Representational and State:  How the server makes data available
 // 1. endpoints being plural nouns
 // 2. 
 

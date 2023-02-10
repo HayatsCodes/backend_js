@@ -62,7 +62,8 @@ app.listen(PORT, () => {
 // a router is created by using the express.Router() function
 
 // REST:
-// 1. endpints being plural nouns
+// R
+// 1. endpoints being plural nouns
 // 2. 
 
 // RESTFUL APIS:

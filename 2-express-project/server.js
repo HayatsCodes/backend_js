@@ -24,7 +24,7 @@ friendsRouter.post('/friends', friendsController.postFriends);
 friendsRouter.get('/friends', friendsController.getFriends);
 friendsRouter.get('/friends/:friendId', friendsController.getFriendsId);
 
-app.use(friendsRouter);
+app.use('',friendsRouter);
 
 app.get('/messages', messagesController.getMessages);
 app.post('/messages', messagesController.postMessages);

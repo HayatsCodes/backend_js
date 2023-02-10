@@ -60,4 +60,4 @@ app.listen(PORT, () => {
 
 // Router:
 // Organizes routes in an application into smaller groups
-// a router is created by
+// a router is created by using the express.Router() function

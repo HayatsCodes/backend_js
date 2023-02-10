@@ -66,7 +66,7 @@ app.listen(PORT, () => {
 // Representational and State:  How the server makes data available
 // Transfer: How it's transffered back to the user
 // Thus, REST is an api pattern that describes how  data are represented and how they're transferred back to the user.
-// Some of this ideas includes:
+// Some of this pattern includes:
 // 1. The use of existing web standards (HTTP, JSON, URL);
 // 2. Endpoints are collections of data and are named in plurals
 // 3. Use GET, POST, PUT and DELETE functions to communicate what actions is being performed on the data

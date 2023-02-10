@@ -58,3 +58,5 @@ app.listen(PORT, () => {
 // Model: This represents how the api sees data e.g (a function that queries users data in a data base)
 // View: This is where the user gets a response to its request
 
+// Router:
+// Organizes routes in an express application into smaller groups

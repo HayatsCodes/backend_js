@@ -68,7 +68,7 @@ app.listen(PORT, () => {
 // Thus, REST is an api pattern that describes how  data are represented and how they're transferred back to the user.
 // Some of this ideas includes:
 // 1. The use of existing web standards (HTTP, JSON, URL);
-// 1. endpoints being plural nouns
+// 2. endpoints being plural nouns
 // 2. 
 
 // RESTFUL APIS:

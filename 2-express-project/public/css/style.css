@@ -9,6 +9,7 @@ a {
     color: #00B7FF;
 }
 
-img {
-    height: fit-content;
+.img {
+    height: 400px;
+    width: 400px;
 }

@@ -1,5 +1,7 @@
+const path = require('path');
+
 function getMessages(req, res) {
-    res.send('<ul><li>Helloo Albert!</li></ul>')
+    res.sendFile(path.join(__dirname, '..', 'public', 'images', 'freshfood-scaled.jpg'));
 }
 
 function postMessages(req, res) {

@@ -59,4 +59,5 @@ app.listen(PORT, () => {
 // View: This is where the user gets a response to its request
 
 // Router:
-// Organizes routes in an express application into smaller groups
+// Organizes routes in an application into smaller groups
+// a router is created by

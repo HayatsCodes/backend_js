@@ -1,7 +1,7 @@
 const PORT = process.env.PORT || 8000;
 
-const expres = require('express');
+const express = require('express');
 
-const app = expres();
+const app = express();
 
-console.log(PORT)
+console.log(PORT);

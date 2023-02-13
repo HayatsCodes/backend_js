@@ -4,4 +4,4 @@ const planetsRouter = express.Router();
 
 planetsRouter.get('/planets', getAllPlanets);
 
-modu
+module.exports()

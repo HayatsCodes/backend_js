@@ -1,5 +1,5 @@
 const planets = [];
 
 function getAllPlanets(req, res) {
-    res.status(200).json(planets);
+    return res.status(200).json(planets);
 }

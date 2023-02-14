@@ -17,5 +17,5 @@ async function startServer() {
     });
 }
 
-start
+startServer();
 // console.log(PORT);

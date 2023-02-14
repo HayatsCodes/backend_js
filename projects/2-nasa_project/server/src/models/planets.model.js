@@ -1,4 +1,3 @@
-const { print } = require('../print')
 const csv = require('csv-parse');
 const fs = require('fs');
 

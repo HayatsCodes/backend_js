@@ -2,7 +2,7 @@ const http = require('http');
 
 const { app } = require('./app');
 
-const {} = require('./models/planets.model');
+const { loadPlanetsData } = require('./models/planets.model');
 
 const PORT = process.env.PORT || 8000;
 

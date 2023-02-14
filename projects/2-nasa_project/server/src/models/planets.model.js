@@ -28,7 +28,7 @@ function loadPlanetsData() {
                 console.log(`${habitablePlanets.length} habitable planets found!`);
                 resolve();
             });
-    })
+    });
 }
 
 module.exports = {

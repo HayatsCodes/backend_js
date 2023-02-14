@@ -1,9 +1,9 @@
 const { planets } = require('../../models/planets.model');
 
-console.log
 
 
 function getAllPlanets(req, res) {
+    console.log(planets);
     return res.status(200).json(planets);
 }
 

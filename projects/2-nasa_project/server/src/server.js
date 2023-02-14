@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 8000;
 
 const server = http.createServer(app);
 
+
+
 await loadPlanetsData();
 
 server.listen(PORT, () => {

@@ -15,7 +15,7 @@ const habitablePlanets = [];
 
 function loadPlanetsData() {
     return new Promise((resolve, reject) => {
-        fs.createReadStream(path.join(__dirname'kepler_data.csv'))
+        fs.createReadStream(path.join(__dirname, '..', '..', 'data', 'kepler_data.csv'))
             .pipe(csv.parse({
                 comment: '#',
                 columns: true,

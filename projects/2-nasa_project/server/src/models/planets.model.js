@@ -1,3 +1,3 @@
-const planets = [];
+const planets = ['a'];
 
 module.exports = planets;

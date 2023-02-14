@@ -22,7 +22,7 @@ function loadPlanetsData() {
     })
     .on('error', (err) => {
         print(err);
-    })
+    }) 
     .on('end', () => {
         console.log(`${habitablePlanets.length} habitable planets found!`);
         resolve();

@@ -8,6 +8,8 @@ function isHabitablePlanet(planet) {
 
 const habitablePlanets = [];
 
+
+
 fs.createReadStream('kepler_data.csv')
     .pipe(csv.parse({
         comment: '#',

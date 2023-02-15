@@ -9,7 +9,7 @@
     "watch": "concurrently --names \"Server,Client\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
     "start-build": "npm run build --prefix client",
     "start-server": "npm start --prefix server",
-    "deploy": "concurrently --names \"Client_Build,Server_Build\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run start-build\" \"npm run start-server\"",
+    "deploy": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

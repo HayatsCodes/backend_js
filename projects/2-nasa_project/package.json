@@ -7,9 +7,9 @@
     "server": "cd server && npm run watch",
     "client": "cd client && npm start",
     "watch": "concurrently --names \"Server,Client\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
-    "build-client": "npm run build --prefix client",
-    
-    "deploy": "concurrently --names \"Client_Build,Server_Build\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run build-client\" \"npm run client\"",
+    "start-build": "npm run build --prefix client",
+    "start-server": "npm start --prefix server",
+    "deploy": "concurrently --names \"Client_Build,Server_Build\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run start-build\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

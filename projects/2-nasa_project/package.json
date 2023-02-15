@@ -7,8 +7,8 @@
     "server": "cd server && npm run watch",
     "client": "cd client && npm start",
     "watch": "concurrently --names \"Server,Client\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
+    "deploy": "concurrently --names \"Build,Client\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
   "author": "",

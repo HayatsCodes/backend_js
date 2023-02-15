@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "cd server && npm run watch",
-    "client": "cd client && npm start",
+    "client": "npm start",
     "watch": "",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

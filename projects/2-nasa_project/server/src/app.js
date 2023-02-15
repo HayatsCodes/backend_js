@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use(planetsRouter);
 
+
 module.exports = {
     app
 }

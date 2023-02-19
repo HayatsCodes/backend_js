@@ -1,4 +1,4 @@
-  
+const history = require('./history.model');
   
   const launches = [];
 
@@ -15,3 +15,4 @@
 
 
 history.push(launch);
+console.log(history);

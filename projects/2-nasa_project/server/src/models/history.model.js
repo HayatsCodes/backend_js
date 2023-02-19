@@ -1,1 +1,3 @@
-const hitory = [];
+const history = [];
+
+module.exports = history;

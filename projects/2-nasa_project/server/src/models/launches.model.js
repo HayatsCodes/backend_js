@@ -1,3 +1,5 @@
+  
+  
   const launches = [];
 
   const launch = {
@@ -11,4 +13,5 @@
     success: true,
   };
 
-  
+
+history.push(launch);

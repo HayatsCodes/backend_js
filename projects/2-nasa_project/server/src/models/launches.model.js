@@ -15,4 +15,3 @@ const history = require('./history.model');
 
 
 history.push(launch);
-console.log(history);

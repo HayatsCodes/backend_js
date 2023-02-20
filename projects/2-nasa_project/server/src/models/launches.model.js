@@ -11,3 +11,5 @@
     success: true,
   };
 
+launches.set(launch.flightNumber, launch);
+launches.get(flig)

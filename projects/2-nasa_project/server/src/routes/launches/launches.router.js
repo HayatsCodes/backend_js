@@ -2,4 +2,4 @@ const express = require('express');
 
 const launchesRouter = express.Router();
 
-lau
+launchesRouter.get('/launches', getAllLaunches);

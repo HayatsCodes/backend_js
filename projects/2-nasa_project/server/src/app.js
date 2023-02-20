@@ -5,6 +5,7 @@ const morgan = require('morgan');
 
 
 const { planetsRouter } = require('./routes/planets/planets.router');
+const { launchesRouter } = require('./routes/planets/planets.router');
 const { launches } = require('./models/launches.model');
 
 const app = express();

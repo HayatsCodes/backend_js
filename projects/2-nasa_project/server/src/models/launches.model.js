@@ -1,6 +1,6 @@
 const history = require('./history.model');
   
-  const launches = [];
+  const launches = new 
 
   const launch = {
     flightNumber: 100,

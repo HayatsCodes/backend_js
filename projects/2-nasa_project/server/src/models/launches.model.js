@@ -1,6 +1,4 @@
-const history = require('./history.model');
-  
-  const launches = new 
+  const launches = new Map();
 
   const launch = {
     flightNumber: 100,
@@ -13,5 +11,3 @@ const history = require('./history.model');
     success: true,
   };
 
-
-history.push(launch);

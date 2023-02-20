@@ -8,7 +8,8 @@ async function httpGetPlanets() {
 
 // Load launches, sort by flight number, and return as JSON.
 async function httpGetLaunches() {
-  const res
+  const response = await fetch(`${API_URL}/launches`);
+  const fetchedLaunches = await response.json
 }
 
 // Submit given launch data to launch system.

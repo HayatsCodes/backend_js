@@ -1,6 +1,6 @@
   const launches = new Map();
 
-  let latest
+  let latestFlightNumber = 100;
 
   const launch = {
     flightNumber: 100,
@@ -17,6 +17,11 @@ launches.set(launch.flightNumber, launch);
 
 function getAllLaunches() {
   return Array.from(launches.values());
+}
+
+function addNewLaunch(launch) {
+  latestFlightNumber++;
+  launches
 }
 
 module.exports = {

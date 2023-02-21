@@ -20,8 +20,9 @@ async function httpSubmitLaunch(launch) {
   await fetch(`${API_URL}/launches`, {
     method: "post",
     headers: {
-      "Content-"
-    }
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(launch);
   })
 }
 

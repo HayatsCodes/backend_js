@@ -10,7 +10,10 @@ function httpGetAllLaunches(req, res) {
 function httpAddNewLaunch(req, res) {
     const launch = req.body;
 
-    
+    if (!launch.mission || !launch.rocket || !launch.launchDate
+        || !launch.destination) {
+            
+        }
 
     launch.launchDate = new Date(launch.launchDate);
 

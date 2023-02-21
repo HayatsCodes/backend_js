@@ -18,6 +18,7 @@ function httpAddNewLaunch(req, res) {
         }
 
     launch.launchDate = new Date(launch.launchDate);
+    if()
 
     addNewLaunch(launch);
     return res.status(201).json(launch);

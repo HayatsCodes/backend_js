@@ -30,6 +30,6 @@ function addNewLaunch(launch) {
 }
 
 module.exports = {
-  getAllLaunches,
+  getA,
   addNewLaunch,
 }

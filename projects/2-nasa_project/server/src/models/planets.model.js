@@ -36,11 +36,11 @@ function loadPlanetsData() {
     });
 }
 
-function httpGetAllPlanets(req, res) {
-    return res.status(200).json(planets);
+function getAllPlanets(req, res) {
+    return res.status(200).json(habitablePlanets);
 }
 
 module.exports = {
     loadPlanetsData,
-    planets: habitablePlanets,
+    getAllPlanets,
 }

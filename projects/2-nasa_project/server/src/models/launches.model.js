@@ -1,5 +1,7 @@
   const launches = new Map();
 
+  let latest
+
   const launch = {
     flightNumber: 100,
     mission: 'Kepler Exploration X',

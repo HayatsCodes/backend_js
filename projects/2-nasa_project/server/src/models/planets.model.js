@@ -36,7 +36,7 @@ function loadPlanetsData() {
     });
 }
 
-function getAllPlanets(req, res) {
+function getAllPlanets() {
     return res.status(200).json(habitablePlanets);
 }
 

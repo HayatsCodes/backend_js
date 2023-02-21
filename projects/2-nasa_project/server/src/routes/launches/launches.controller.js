@@ -1,5 +1,5 @@
 const { 
-    getAllaunches,
+    getAlllaunches,
     addNewLaunch,
  } = require('../../models/launches.model');
 

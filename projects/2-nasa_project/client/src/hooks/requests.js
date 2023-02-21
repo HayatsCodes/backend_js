@@ -23,7 +23,7 @@ async function httpSubmitLaunch(launch) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(launch)
-  })
+  });
 }
 
 // Delete launch with given ID.

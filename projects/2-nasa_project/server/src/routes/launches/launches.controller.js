@@ -16,7 +16,7 @@ function httpAddNewLaunch(req, res) {
     return res.status(201).json(launch);
 }
 
-module.exports = 
+module.exports = {
     httpGetAllLaunches,
     httpAddNewLaunch,
 };

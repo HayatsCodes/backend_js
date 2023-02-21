@@ -12,7 +12,7 @@
   };
 
 launches.set(launch.flightNumber, launch);
-launches.get(100);
+
 
 module.exports = {
   launches,

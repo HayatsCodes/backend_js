@@ -18,7 +18,9 @@ function httpAddNewLaunch(req, res) {
         }
 
     launch.launchDate = new Date(launch.launchDate);
-    if()
+    if (launch.launchDate.toString() === 'Invalid Date') {
+        return res.status(400).json
+    }
 
     addNewLaunch(launch);
     return res.status(201).json(launch);

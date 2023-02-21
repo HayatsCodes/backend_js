@@ -25,6 +25,10 @@ async function httpSubmitLaunch(launch) {
       },
       body: JSON.stringify(launch)
     });
+  } catch(err) {
+    return {
+      ok: false,
+    };
   }
  
 }

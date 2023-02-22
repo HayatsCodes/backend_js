@@ -14,7 +14,7 @@ function httpAddNewLaunch(req, res) {
         {name: 'mission', value:launch.mission},
         {name: 'rocket', value: launch.rocket},
         {name: 'launchDate', value: launch.launchDate},
-        {name: 'target', value: launch.target},
+        {name: 'target', value: launch.target}
     ];
 
     for (let i = 0; i < launchProperties.length; i++) {

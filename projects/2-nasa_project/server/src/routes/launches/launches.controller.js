@@ -12,6 +12,8 @@ function httpAddNewLaunch(req, res) {
 
     const launchProperties = [launch.mission, launch.rocket, launch.launchDate, launch.target];
 
+    for 
+
     if (!launch.mission || !launch.rocket || !launch.launchDate
         || !launch.target) {
             return res.status(400).json({

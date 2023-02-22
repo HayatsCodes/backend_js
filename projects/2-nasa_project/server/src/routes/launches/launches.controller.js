@@ -31,7 +31,7 @@ function httpAddNewLaunch(req, res) {
     }
 
     const randomIndex = Math.floor(Math.random() * habitablePlanets.length);
-    const targetPlanet = habitablePlanets[randomIndex].;
+    const targetPlanet = habitablePlanets[randomIndex].kepler_name;
 
     launch.target = targetPlanet;
 

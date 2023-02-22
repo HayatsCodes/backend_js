@@ -12,7 +12,9 @@ function httpAddNewLaunch(req, res) {
 
     const launchProperties = [launch.mission, launch.rocket, launch.launchDate, launch.target];
 
-    for 
+    for (let i = 0; i < launchProperties.length; i++) {
+        if (!l)
+    }
 
     if (!launch.mission || !launch.rocket || !launch.launchDate
         || !launch.target) {

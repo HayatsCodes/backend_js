@@ -10,7 +10,8 @@ function httpGetAllLaunches(req, res) {
 function httpAddNewLaunch(req, res) {
     const launch = req.body;
 
-    const launchProperties = [launch.mission, launch.rocket, launch.launchDate, launch.target];
+    const launchProperties = [
+        launch.mission, launch.rocket, launch.launchDate, launch.target];
 
     for (let i = 0; i < launchProperties.length; i++) {
         if (!launchProperties[i]) {

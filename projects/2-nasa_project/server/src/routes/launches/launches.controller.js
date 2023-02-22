@@ -3,7 +3,7 @@ const {
     addNewLaunch,
  } = require('../../models/launches.model');
 
- const { planets } =
+ const { getAllPlanets } = require('../../models/planets.model');
 
 function httpGetAllLaunches(req, res) {
     return res.status(200).json(getAllLaunches());

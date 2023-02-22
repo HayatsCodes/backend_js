@@ -12,6 +12,9 @@ function httpAddNewLaunch(req, res) {
 
     const launchProperties = [
         {name: 'mission', value:launch.mission},
+        {name: 'rocket', value: launch.rocket},
+        {name: 'rocket', value: launch.rocket},
+        {name: 'target', value: launch.target},
         launch.mission, launch.rocket, launch.launchDate, launch.target
     ];
 

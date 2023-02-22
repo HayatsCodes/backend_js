@@ -6,7 +6,7 @@ const {
  const { getAllPlanets } = require('../../models/planets.model');
  const planets = getAllPlanets();
 
- 
+
 
  console.log(planets);
 
@@ -26,7 +26,10 @@ function httpAddNewLaunch(req, res) {
 
     for (let i = 0; i < launchProperties.length; i++) {
         if (launchProperties[i].name === 'target') {
-            launchProperties[i].value = ''
+            const randomIndex = Math.floor(Math.random() * planets.length);
+            const targetPlanet = array[randomIndex];
+
+            launchProperties[i].value = targetPlanet
         }
         if (!launchProperties[i].value) {
             return res.status(400).json({

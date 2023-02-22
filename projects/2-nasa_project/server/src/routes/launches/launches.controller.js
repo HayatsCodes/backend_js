@@ -13,7 +13,11 @@ function httpAddNewLaunch(req, res) {
     const launchProperties = [launch.mission, launch.rocket, launch.launchDate, launch.target];
 
     for (let i = 0; i < launchProperties.length; i++) {
-        if (!l)
+        if (!launchProperties[i]) {
+            return res.status(400).json({
+                error: `Missing required ${launchProperties[i]} property`,
+            });
+        }
     }
 
     if (!launch.mission || !launch.rocket || !launch.launchDate

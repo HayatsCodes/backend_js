@@ -30,7 +30,7 @@ function httpAddNewLaunch(req, res) {
 
             launchProperties[i].value = targetPlanet;
         }
-        if (!launchProperties[i].value) {
+        else if (!launchProperties[i].value) {
             return res.status(400).json({
                 error: `Missing required ${launchProperties[i].name} property`,
             });

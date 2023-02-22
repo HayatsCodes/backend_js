@@ -6,6 +6,8 @@ const {
  const { getAllPlanets } = require('../../models/planets.model');
  const planets = getAllPlanets();
 
+ 
+
  console.log(planets);
 
 function httpGetAllLaunches(req, res) {

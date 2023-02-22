@@ -25,10 +25,7 @@ function httpAddNewLaunch(req, res) {
 
     for (let i = 0; i < launchProperties.length; i++) {
         if (launchProperties[i].name === 'target' && !launchProperties[i].value) {
-            const randomIndex = Math.floor(Math.random() * habitablePlanets.length);
-            const targetPlanet = habitablePlanets[randomIndex];
-
-            launchProperties[i].value = targetPlanet;
+           
         }
         else if (!launchProperties[i].value) {
             return res.status(400).json({

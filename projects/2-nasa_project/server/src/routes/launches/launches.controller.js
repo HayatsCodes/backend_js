@@ -4,11 +4,10 @@ const {
  } = require('../../models/launches.model');
 
  const { getAllPlanets } = require('../../models/planets.model');
- const planets = getAllPlanets();
+ const habitablePlanets = getAllPlanets();
 
 
 
- console.log(planets);
 
 function httpGetAllLaunches(req, res) {
     return res.status(200).json(getAllLaunches());
@@ -26,10 +25,10 @@ function httpAddNewLaunch(req, res) {
 
     for (let i = 0; i < launchProperties.length; i++) {
         if (launchProperties[i].name === 'target') {
-            const randomIndex = Math.floor(Math.random() * planets.length);
-            const targetPlanet = array[randomIndex];
+            const randomIndex = Math.floor(Math.random() * habitablePlanets.length);
+            const targetPlanet = habitablePlanets[randomIndex];
 
-            launchProperties[i].value = targetPlanet
+            launchProperties[i].value = targetPlanet;
         }
         if (!launchProperties[i].value) {
             return res.status(400).json({

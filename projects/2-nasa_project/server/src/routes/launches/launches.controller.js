@@ -18,7 +18,8 @@ function httpAddNewLaunch(req, res) {
     ];
 
     for (let i = 0; i < launchProperties.length; i++) {
-        if (!launchProperties[i].value ) {
+        if (launchProperties[i].name === '')
+        if (!launchProperties[i].value) {
             return res.status(400).json({
                 error: `Missing required ${launchProperties[i].name} property`,
             });

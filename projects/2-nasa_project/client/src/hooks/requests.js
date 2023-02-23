@@ -36,7 +36,7 @@ try {
 
 // Delete launch with given ID.
 async function httpAbortLaunch(id) {
-  // 
+  
 }
 
 export {

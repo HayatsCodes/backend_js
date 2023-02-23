@@ -10,7 +10,7 @@ describe('Test GET /launches', () => {
     });
 });
 
-describe('Test POST /launches', () => {
+describe('Test POST /launch', () => {
     test('It should respond with 201 created', async () => {
         const response = await request(app)
         .post('/launches')

@@ -9,4 +9,8 @@ describe('Test POST /launches', () => {
     test('It should respond with 200 success', () => {
 
     });
-})
+
+    test('It should catch missing required properties', () => {
+        
+    })
+});

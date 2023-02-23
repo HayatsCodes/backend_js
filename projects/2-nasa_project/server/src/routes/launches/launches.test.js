@@ -22,7 +22,6 @@ describe('Test POST /launch', () => {
         })
         .set("Accept", "application/json")
         .expect("Content-Type", "text/html; charset=utf-8")
-        .expect(response => {console.log(response)})
         .expect(500)
     });
 

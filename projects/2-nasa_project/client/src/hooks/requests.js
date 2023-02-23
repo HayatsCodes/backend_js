@@ -36,7 +36,12 @@ try {
 
 // Delete launch with given ID.
 async function httpAbortLaunch(id) {
-  return await fetch(`${API_URL}/launches/${id}`);
+  try {
+    return await fetch(`${API_URL}/launches/${id}`, {
+      method: "delete",
+    });
+
+  }
 }
 
 export {

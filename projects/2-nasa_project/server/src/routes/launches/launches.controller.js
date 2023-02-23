@@ -1,6 +1,7 @@
 const { 
     getAllLaunches,
     addNewLaunch,
+    existLaunchWithId,
  } = require('../../models/launches.model');
 
  const { getAllPlanets } = require('../../models/planets.model');

@@ -11,7 +11,7 @@ describe('Test GET /launches', () => {
 });
 
 describe('Test POST /launches', () => {
-    test('It should respond with 201 success', async () => {
+    test('It should respond with 201 created', async () => {
         const response = await request(app)
         .post('/launches')
         .send({

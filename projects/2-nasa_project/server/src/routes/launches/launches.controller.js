@@ -2,6 +2,7 @@ const {
     getAllLaunches,
     addNewLaunch,
     existLaunchWithId,
+    abortLaunchById,
  } = require('../../models/launches.model');
 
  const { getAllPlanets } = require('../../models/planets.model');
@@ -52,6 +53,8 @@ function httpAbortLaunch(req, res) {
             error: 'Launch not found',
         });
     }
+
+    const aborted = abortLaunchById(launchId);
 
 
 }

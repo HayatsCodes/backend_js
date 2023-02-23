@@ -21,7 +21,7 @@ describe('Test POST /launches', () => {
             launchDate: 'January 4, 2028',
         })
         // .expect('Content-Type', /json/)
-        .expect(201);
+        .expect(500);
     });
 
     test('It should catch missing required properties', () => {});

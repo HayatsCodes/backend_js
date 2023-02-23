@@ -10,7 +10,6 @@ describe('Test POST /launches', () => {
 
     });
 
-    test('It should catch missing required properties', () => {
-        
-    })
+    test('It should catch missing required properties', () => {});
+    test('It should catch invalid dates', () => {});
 });

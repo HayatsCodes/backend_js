@@ -57,6 +57,7 @@ function httpAbortLaunch(req, res) {
     }
 
     const aborted = abortLaunchById(launchId);
+    
 
 }
 

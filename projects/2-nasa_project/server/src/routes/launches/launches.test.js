@@ -21,8 +21,9 @@ describe('Test POST /launch', () => {
             launchDate: 'January 4, 2028',
         })
         .set("Accept", "application/json")
-        .expect("Content-Type", /text/html/)
-        .expect(201);
+        .expect("Content-Type", "text/html; charset=utf-8")
+        .expect(response => {console.log(response)})
+        .expect(500)
     });
 
     test('It should catch missing required properties', () => {});

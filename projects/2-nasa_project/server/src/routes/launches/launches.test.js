@@ -20,6 +20,7 @@ describe('Test POST /launch', () => {
             target: 'Kepler-186 f',
             launchDate: 'January 4, 2028',
         })
+        
         .expect(201);
     });
 

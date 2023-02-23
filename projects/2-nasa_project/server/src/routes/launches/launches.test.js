@@ -11,8 +11,9 @@ describe('Test GET /launches', () => {
 });
 
 describe('Test POST /launches', () => {
-    test('It should respond with 200 success', () => {
-        
+    test('It should respond with 200 success', async () => {
+        const response = await request(app)
+        .post('/launches')
     });
 
     test('It should catch missing required properties', () => {});

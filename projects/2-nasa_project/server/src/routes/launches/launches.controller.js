@@ -50,7 +50,7 @@ function httpAbortLaunch(req, res) {
 
     const isExist = existLaunchWithId(launchId);
 
-    if(!existLaunchWithId(!isExist)) {
+    if(!existLaunchWithId(isExist)) {
         return res.status(404).json({
             error: `Launch not found, return ${isExist}`,
         });

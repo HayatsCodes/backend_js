@@ -14,7 +14,6 @@
   };
 
 launches.set(launch.flightNumber, launch);
-console.log(launches.has(100));
 
 function existLaunchWithId(launchId) {
   return launches.has(launchId);

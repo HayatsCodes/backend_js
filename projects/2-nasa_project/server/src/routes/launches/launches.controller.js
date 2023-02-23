@@ -44,10 +44,11 @@ function httpAddNewLaunch(req, res) {
 }
 
 function httpAbortLaunch(req, res) {
-    
+    const launchId = req.params.id;
 }
 
 module.exports = {
     httpGetAllLaunches,
     httpAddNewLaunch,
+    httpAbortLaunch,
 };

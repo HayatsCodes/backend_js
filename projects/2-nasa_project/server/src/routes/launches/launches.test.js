@@ -5,3 +5,6 @@ describe('Test GET /launches', () => {
     });
 });
 
+describe('Test POST /launches', () => {
+    test()
+})

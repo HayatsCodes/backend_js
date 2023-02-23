@@ -6,5 +6,7 @@ describe('Test GET /launches', () => {
 });
 
 describe('Test POST /launches', () => {
-    test()
+    test('It should respond with 200 success', () => {
+
+    });
 })

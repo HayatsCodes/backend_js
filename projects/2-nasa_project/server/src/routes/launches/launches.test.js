@@ -15,7 +15,7 @@ describe('Test POST /launches', () => {
         const response = await request(app)
         .post('/launches')
         .send({
-            mission: 'USS Enterprise',
+           " mission": 'USS Enterprise',
             rocket: 'NCC 1701HD',
             target: 'Kepler-186 f',
             launchDate: 'January 4, 2028',

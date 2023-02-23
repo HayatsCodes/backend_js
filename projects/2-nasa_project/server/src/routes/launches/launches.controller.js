@@ -52,7 +52,7 @@ function httpAbortLaunch(req, res) {
 
     if(!existLaunchWithId(!isExist)) {
         return res.status(404).json({
-            error: 'Launch not found',
+            error: `Launch not found, return ${isExist}`,
         });
     }
 

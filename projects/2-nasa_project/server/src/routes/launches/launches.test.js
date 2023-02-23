@@ -17,6 +17,7 @@ describe('Test POST /launches', () => {
         .send({
             mission: 'USS Enterprise',
             rocket: 'NCC 1701HD',
+            target: 'Kepler-186 f',
             launchDate: 'January 4, 2028',
         })
         .expect('Content-Type', /json/)

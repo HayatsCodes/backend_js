@@ -35,7 +35,7 @@ function addNewLaunch(launch) {
 }
 
 function abortLaunchById(launchId) {
-  
+   
 }
 
 module.exports = {

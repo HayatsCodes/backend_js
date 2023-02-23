@@ -43,6 +43,10 @@ function httpAddNewLaunch(req, res) {
     return res.status(201).json(launch);
 }
 
+function httpAbortLaunch(req, res) {
+    
+}
+
 module.exports = {
     httpGetAllLaunches,
     httpAddNewLaunch,

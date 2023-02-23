@@ -3,7 +3,7 @@ const { app } = require('../../app');
 
 describe('Test GET /launches', () => {
     test('It should respond with 200 success', () => {
-        const response = request(app);
+        const response = request(app).get;
         expect(response).toBe(200);
     });
 });

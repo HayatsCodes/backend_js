@@ -49,9 +49,11 @@ function httpAbortLaunch(req, res) {
 
     if(!existLaunchWithId(launchId)) {
         return res.status(404).json({
-            error
-        })
+            error: 'Launch not found',
+        });
     }
+
+
 }
 
 module.exports = {

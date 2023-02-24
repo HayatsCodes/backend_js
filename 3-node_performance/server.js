@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
 function delay(duration) {
     const startTime = Date.now();
     while (Date.now() - startTime < duration) {
-        
+
     }
 }
 
 app.get('/timer', (req, res) => {
-
+    delay(9000);
     res.send('Ding ding ding');
 });

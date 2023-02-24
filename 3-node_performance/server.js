@@ -16,7 +16,7 @@ function delay(duration) {
 
 app.get('/timer', (req, res) => {
     delay(9000);
-    res.send('Ding ding ding');
+    res.send(`Ding ding ding! ${process.pid}`);
 });
 
 if (cluster.isMaster) {

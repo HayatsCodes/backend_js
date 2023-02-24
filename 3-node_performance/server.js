@@ -26,4 +26,4 @@ app.listen(3000, () => {
 // When a node server is started, a master process is created.
 // With the cluster module, one can create multiple copies of the master process,
 // called workers by calling the fork() function provided in the cluster module.
-// The cluster module uses the Round robin approach to distribute requests to workers, which is 
+// The cluster module uses the Round robin approach to distribute requests to workers, thereby which each workers take turns to process requests.

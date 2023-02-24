@@ -21,3 +21,5 @@ app.get('/timer', (req, res) => {
 app.listen(3000, () => {
     console.log('Server spinning at port 3000');
 });
+
+// Round robin approach is used to share 

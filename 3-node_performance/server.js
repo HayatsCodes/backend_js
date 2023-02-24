@@ -22,4 +22,7 @@ app.listen(3000, () => {
     console.log('Server spinning at port 3000');
 });
 
-// the cluster module uses the Round robin approach to distribute requests to workw
+
+// When a node server is started, a master process is created
+// but with the cluster module
+// the cluster module uses the Round robin approach to distribute requests to workers

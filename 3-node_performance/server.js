@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/timer', (req, res) => {
-    const start
+    const startTime = Date.now();
+    while (Date.now() - startTime < durat)
+
     res.send('Ding ding ding');
 });

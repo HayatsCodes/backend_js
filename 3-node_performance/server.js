@@ -18,4 +18,4 @@ app.get('/timer', (req, res) => {
     res.send('Ding ding ding');
 });
 
-app.listen(3000)
+app.listen(3000, ())

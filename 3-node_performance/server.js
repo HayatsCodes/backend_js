@@ -19,7 +19,11 @@ app.get('/timer', (req, res) => {
     res.send('Ding ding ding');
 });
 
-
+if (cluster.isMaster) {
+    console.log('Master has been started...');
+} else {
+    console.log('Worker pro')
+}
 
 app.listen(3000, () => {
     console.log('Server spinning at port 3000');

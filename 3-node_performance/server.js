@@ -4,6 +4,9 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send('Performance example');
-})
+});
 
-app.get('/timer')
+app.get('/timer', (req, res) => {
+    
+    res.send('Ding ding ding');
+});

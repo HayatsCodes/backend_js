@@ -2,8 +2,12 @@ const { isMainThread, Worker } = require('worker_threads');
 
 if (isMainThread) {
     console.log(`Main! Process ID: ${process.pid}`);
-    new Worker(__filename, );
-    new Worker(__filename);
+    new Worker(__filename, {
+        workerData: [7, 6, 2, 3]
+    });
+    new Worker(__filename, {
+        workerData: [1, 3, 2, 3]
+    });
 } else {
     console.log(`Worker! Process ID: ${process.pid}`);
 }

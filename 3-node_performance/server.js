@@ -6,9 +6,14 @@ app.get('/', (req, res) => {
     res.send('Performance example');
 });
 
-app.get('/timer', (req, res) => {
+function delay(duration) {
     const startTime = Date.now();
-    while (Date.now() - startTime < durat)
+    while (Date.now() - startTime < duration) {
+        
+    }
+}
+
+app.get('/timer', (req, res) => {
 
     res.send('Ding ding ding');
 });

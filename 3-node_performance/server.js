@@ -4,7 +4,7 @@ const cluster = require('cluster');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send(`'Performance example'`);
+    res.send(`Performance example: ${process.pid}`);
 });
 
 function delay(duration) {

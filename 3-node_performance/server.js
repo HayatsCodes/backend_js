@@ -22,7 +22,8 @@ app.get('/timer', (req, res) => {
 
 if (cluster.isMaster) {
     console.log('Master has been started...');
-    const NUM_WORKERS = os.cpus()
+    const NUM_WORKERS = os.cpus().length
+    for (let i = 0; i < NUM_WORKERS; i++)
     cluster.fork();
     cluster.fork();
 } else {

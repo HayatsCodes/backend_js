@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/timer', (req, res) => {
-    
+    const start
     res.send('Ding ding ding');
 });

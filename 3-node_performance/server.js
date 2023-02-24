@@ -37,7 +37,7 @@ if (cluster.isMaster) {
 
 
 // Load balancing is the techinque used to distribute a sets of tasks to a set of resources
-// The node cluster module is used to do load balancing of re within a node server
+// The node cluster module is used to do load balancing of requests within a node server
 // When a node server is started, a master process is created.
 // With the cluster module, one can create multiple copies of the master process,
 // called workers by calling the fork() function provided in the cluster module.

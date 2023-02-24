@@ -10,5 +10,5 @@ if (isMainThread) {
     });
 } else {
     console.log(`Worker! Process ID: ${process.pid}`);
-    console.log(`${workerData}`)
+    console.log(`${workerData} sorted is ${workerData.sort()}`);
 }

@@ -8,6 +8,7 @@
     "test-watch": "jest --watch",
     "watch": "nodemon src/erver.js",
     "start": "node src/server.js"
+    
   },
   "keywords": [],
   "author": "",

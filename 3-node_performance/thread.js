@@ -4,5 +4,5 @@ if (isMainThread) {
     new Worker(__filename);
     new Worker(__filename);
 } else {
-    console.log('Worker');
+    console.log('Worker! Process ID');
 }

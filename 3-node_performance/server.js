@@ -14,8 +14,8 @@ function delay(duration) {
 }
 
 app.get('/timer', (req, res) => {
-    delay(9000);
-    res.send(`Bee! ${process.pid}`);
+    delay(4000);
+    res.send(`Beep beep beep! ${process.pid}`);
 });
 
 

@@ -21,8 +21,9 @@ app.get('/timer', (req, res) => {
 
 if (cluster.isMaster) {
     console.log('Master has been started...');
+    cluster.fork();
 } else {
-    console.log('Worker pro')
+    console.log('Worker process started');
 }
 
 app.listen(3000, () => {

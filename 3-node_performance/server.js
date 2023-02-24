@@ -1,6 +1,6 @@
 const express = require('express');
 const cluster = require('cluster');
-
+const os = require('os');
 
 const app = express();
 
@@ -22,6 +22,7 @@ app.get('/timer', (req, res) => {
 
 if (cluster.isMaster) {
     console.log('Master has been started...');
+    const NUM_WORKERS = os.cpus()
     cluster.fork();
     cluster.fork();
 } else {

@@ -22,13 +22,15 @@ app.get('/timer', (req, res) => {
 if (cluster.isMaster) {
     console.log('Master has been started...');
     cluster.fork();
+    cluster.fork();
 } else {
     console.log('Worker process started');
+    app.listen(3000, () => {
+        console.log('Server spinning at port 3000');
+    });
 }
 
-app.listen(3000, () => {
-    console.log('Server spinning at port 3000');
-});
+
 
 
 // When a node server is started, a master process is created.

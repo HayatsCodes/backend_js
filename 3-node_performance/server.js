@@ -21,12 +21,10 @@ app.get('/timer', (req, res) => {
 });
 
 
-    console.log('Worker process started');
-    app.listen(3000, () => {
-        console.log('Server spinning at port 3000');
-    });
-}
-
+console.log('Worker process started');
+app.listen(3000, () => {
+    console.log('Server spinning at port 3000');
+});
 
 
 // Load balancing is the techinque used to distribute a sets of tasks to a set of resources

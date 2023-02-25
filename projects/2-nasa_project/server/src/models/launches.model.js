@@ -14,7 +14,7 @@
     success: true,
   };
 
-launches.set(launch.flightNumber, launch);
+// launches.set(launch.flightNumber, launch);
 
 function existLaunchWithId(launchId) {
   return launches.has(launchId);

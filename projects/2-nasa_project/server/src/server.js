@@ -17,7 +17,7 @@ mongoose.connection.once('open', () => {
 mongoose.connection.on('error', (err) =>
 console.error(err));
 
-mongoose.set('strictQuery', false); 
+mongoose.set('strictQuery', false);
 
 async function startServer() {
     await mongoose.connect(MONGO_URL, {

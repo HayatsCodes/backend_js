@@ -10,14 +10,14 @@ const MONGO_URL = 'mongodb+srv://nasa-api:4jNvIlTndydEdUSN@nasacluster.vkrtqnr.m
 
 const server = http.createServer(app);
 
-mongoose.connection.once('open', () => {
-    console.log('MongoDB connection ready!');
-});
+// mongoose.connection.once('open', () => {
+//     console.log('MongoDB connection ready!');
+// });
 
-mongoose.connection.on('error', (err) =>
-console.error(err));
+// mongoose.connection.on('error', (err) =>
+// console.error(err));
 
-mongoose.set('strictQuery', false);
+// mongoose.set('strictQuery', false);
 
 async function startServer() {
     await mongoose.connect(MONGO_URL, {

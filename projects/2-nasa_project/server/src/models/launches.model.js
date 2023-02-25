@@ -35,7 +35,7 @@ async function saveLaunch(launch) {
   });
 
   if (!planet) {
-    throw new E
+    throw new Error('No matching planet found')
   }
 
   await launchesDatabase.updateOne({

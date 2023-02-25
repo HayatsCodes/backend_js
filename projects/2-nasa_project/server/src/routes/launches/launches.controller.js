@@ -9,7 +9,7 @@ const {
  const habitablePlanets = getAllPlanets();
 
 async function httpGetAllLaunches(req, res) {
-    const allLaunches = getAllLaunches();
+    const allLaunches = await getAllLaunches();
     console.log('allLaunches: ', allLaunches);
     return await res.status(200).json(allLaunches);
 }

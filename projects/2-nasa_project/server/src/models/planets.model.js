@@ -19,7 +19,7 @@ function loadPlanetsData() {
             }))
             .on('data', (data) => {
                 if (isHabitablePlanet(data)) {
-                    planets.create(data);
+                    await planets.create(data);
                 }
             })
             .on('error', (err) => {

@@ -25,7 +25,7 @@ function loadPlanetsData() {
                     }, {
                         keplerName: data.kepler_name,
                     }, {
-                        upsert: data.kepler_name,
+                        upsert: true,
                     }
                     );
                 }

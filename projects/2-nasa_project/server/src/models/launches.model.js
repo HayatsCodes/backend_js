@@ -30,6 +30,10 @@ async function getLatestFlightNumber() {
     .findOne()
     .sort('-flightNumber');
 
+  if (!latestLaunch) {
+    return D
+  }
+
   return latestLaunch.flightNumber;
 }
 

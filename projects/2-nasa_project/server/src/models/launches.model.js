@@ -69,7 +69,7 @@ async function scheduleNewLaunch(launch) {
           flightNumber: newFlightNumber,
         });
 
-      await saveLaunch
+      await saveLaunch(launch);
 }
 
 // function addNewLaunch(launch) {
@@ -94,5 +94,6 @@ module.exports = {
   existLaunchWithId,
   getAllLaunches,
   addNewLaunch,
+  scheduleNewLaunch,
   abortLaunchById,
 }

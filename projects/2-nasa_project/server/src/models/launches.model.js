@@ -31,8 +31,10 @@ async function getAllLaunches() {
 
 async function saveLaunch(launch) {
   const planet = await planets.findOne({
-    keplerName: launch.
+    keplerName: launch.target,
   })
+
+  
 
   await launchesDatabase.updateOne({
     flightNumber: launch.flightNumber,

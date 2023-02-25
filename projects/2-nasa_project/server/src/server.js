@@ -20,10 +20,10 @@ const server = http.createServer(app);
 // mongoose.set('strictQuery', false);
 
 async function startServer() {
-    await mongoose.connect(MONGO_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
+    // await mongoose.connect(MONGO_URL, {
+    //     useNewUrlParser: true,
+    //     useUnifiedTopology: true,
+    // });
     await loadPlanetsData();
 
     server.listen(PORT, () => {

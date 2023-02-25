@@ -13,7 +13,7 @@ async function httpGetAllLaunches(req, res) {
     return await res.status(200).json(allLaunches);
 }
 
-function httpAddNewLaunch(req, res) {
+async function httpAddNewLaunch(req, res) {
     const launch = req.body;
 
     const launchProperties = [
@@ -43,7 +43,7 @@ function httpAddNewLaunch(req, res) {
         });
     }
 
-    scheduleNewLaunch(launch);
+    await scheduleNewLaunch(launch);
     return res.status(201).json(launch);
 }
 

@@ -25,7 +25,12 @@ function getAllLaunches() {
 }
 
 async function saveLaunch(launch) {
-  await launches.updateOne
+  await launches.updateOne({
+    flightNumber: launch.flightNumber
+  }, {
+    
+  }
+  )
 }
 
 function addNewLaunch(launch) {

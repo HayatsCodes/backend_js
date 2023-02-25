@@ -1,6 +1,5 @@
 const { 
     getAllLaunches,
-    addNewLaunch,
     existLaunchWithId,
     abortLaunchById,
     scheduleNewLaunch,

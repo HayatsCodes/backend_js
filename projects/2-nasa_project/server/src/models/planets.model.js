@@ -38,14 +38,19 @@ async function getAllPlanets() {
 }
 
 async function savePlanet(planet) {
-    await planets.updateOne({
-        keplerName: planet.kepler_name,
-    }, {
-        keplerName: planet.kepler_name,
-    }, {
-        upsert: true,
+    try {
+        await planets.updateOne({
+            keplerName: planet.kepler_name,
+        }, {
+            keplerName: planet.kepler_name,
+        }, {
+            upsert: true,
+        }
+        );
+    } catch(err) {
+        
     }
-    );
+    
 }
 
 module.exports = {

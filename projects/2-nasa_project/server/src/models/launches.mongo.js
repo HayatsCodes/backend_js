@@ -18,7 +18,11 @@ const launchesSchema = new mongoose.Schema({
         required: true,
     },
     target: {
-        type: S,
-        ref: 'Planet',
+        type: String,
+        required: true,
+    },
+    upcoming: {
+        type: Boolean,
+        
     }
 })

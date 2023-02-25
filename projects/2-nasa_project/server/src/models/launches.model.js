@@ -24,7 +24,7 @@ function getAllLaunches() {
   return Array.from(launches.values());
 }
 
-
+async 
 
 function addNewLaunch(launch) {
   latestFlightNumber++;

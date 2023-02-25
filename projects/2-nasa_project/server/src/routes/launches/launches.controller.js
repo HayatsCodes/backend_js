@@ -1,8 +1,8 @@
 const { 
     getAllLaunches,
+    scheduleNewLaunch,
     existLaunchWithId,
     abortLaunchById,
-    scheduleNewLaunch,
  } = require('../../models/launches.model');
 
  const { getAllPlanets } = require('../../models/planets.model');

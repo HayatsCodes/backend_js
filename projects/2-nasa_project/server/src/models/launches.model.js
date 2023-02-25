@@ -23,6 +23,8 @@ function existLaunchWithId(launchId) {
   return launches.has(launchId);
 }
 
+
+
 async function getAllLaunches() {
   return await launchesDatabase.find({}, {
     '_id': 0, '__v': 0,

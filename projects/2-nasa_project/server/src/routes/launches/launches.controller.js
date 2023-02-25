@@ -19,7 +19,7 @@ function httpAddNewLaunch(req, res) {
         {name: 'mission', value:launch.mission},
         {name: 'rocket', value: launch.rocket},
         {name: 'launchDate', value: launch.launchDate},
-        {}
+        {name: 'target', value: launch.target},
     ];
 
     for (let i = 0; i < launchProperties.length; i++) {
@@ -30,10 +30,10 @@ function httpAddNewLaunch(req, res) {
         }
     }
 
-    const randomIndex = Math.floor(Math.random() * habitablePlanets.length);
-    const targetPlanet = habitablePlanets[randomIndex].kepler_name;
+    // const randomIndex = Math.floor(Math.random() * habitablePlanets.length);
+    // const targetPlanet = habitablePlanets[randomIndex].kepler_name;
 
-    launch.target = targetPlanet;
+    // launch.target = targetPlanet;
 
     launch.launchDate = new Date(launch.launchDate);
     if (launch.launchDate.toString() === 'Invalid Date') {

@@ -21,7 +21,7 @@ function existLaunchWithId(launchId) {
 }
 
 async function getAllLaunches() {
-  return Array.from(launches.values());
+  await 
 }
 
 async function saveLaunch(launch) {

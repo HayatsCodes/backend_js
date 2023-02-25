@@ -31,7 +31,7 @@ async function getLatestFlightNumber() {
     .sort('-flightNumber');
 
   if (!latestLaunch) {
-    return D
+    return DEFAULT_FLIGHT_NUMBER;
   }
 
   return latestLaunch.flightNumber;

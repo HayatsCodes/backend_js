@@ -3,6 +3,7 @@ const {
     addNewLaunch,
     existLaunchWithId,
     abortLaunchById,
+    scheduleNewLaunch,
  } = require('../../models/launches.model');
 
  const { getAllPlanets } = require('../../models/planets.model');
@@ -43,7 +44,7 @@ function httpAddNewLaunch(req, res) {
         });
     }
 
-    addNewLaunch(launch);
+    scheduleNewLaunch(launch);
     return res.status(201).json(launch);
 }
 

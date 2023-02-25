@@ -66,8 +66,10 @@ async function scheduleNewLaunch(launch) {
           success: true,
           upcoming: true,
           customers: ['Zero to Mastery', 'NASA'],
-          flightNumber: latestFlightNumber,
+          flightNumber: newFlightNumber,
         });
+
+      await saveLaunch
 }
 
 // function addNewLaunch(launch) {

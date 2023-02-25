@@ -6,6 +6,12 @@ const launchesSchema = new mongoose.Schema({
         required: true,
     },
     launchDate: {
-        
-    }
+        type: Date,
+        required: true,
+    },
+    mission: {
+        type: String,
+        required: true,
+    },
+    ro
 })

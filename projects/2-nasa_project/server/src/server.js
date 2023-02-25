@@ -23,6 +23,7 @@ async function startServer() {
         useFindAndModify: false,
         useCreateIndex: true,
         useUnifiedTopology: true,
+        
     });
     await loadPlanetsData();
 

@@ -30,7 +30,6 @@ async function getAllLaunches() {
 }
 
 async function saveLaunch(launch) {
-  console.log(`launch: ${launch.flightNumber}`);
   await launchesDatabase.updateOne({
     flightNumber: launch.flightNumber,
   }, launch, {

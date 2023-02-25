@@ -8,7 +8,7 @@ const {
  const { getAllPlanets } = require('../../models/planets.model');
  const habitablePlanets = getAllPlanets();
 
-function httpGetAllLaunches(req, res) {
+async function httpGetAllLaunches(req, res) {
     return res.status(200).json(getAllLaunches());
 }
 

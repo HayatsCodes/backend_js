@@ -22,7 +22,11 @@ function loadPlanetsData() {
                     // TODO: Replace below create function with upsert
                     await planets.updateOne({
                         keplerName: data.kepler_name,
-                    },
+                    }, {
+                        keplerName: data.kepler_name,
+                    }, {
+                        upsert: data.kepler_name,
+                    }
                     );
                 }
             })

@@ -59,7 +59,9 @@ async function saveLaunch(launch) {
   });
 }
 
-function 
+async function scheduleNewLaunch(launch) {
+  const newFlightNumber = await getLatestFlightNumber() + 1;
+}
 
 // function addNewLaunch(launch) {
 //   latestFlightNumber++;

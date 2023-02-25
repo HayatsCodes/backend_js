@@ -13,5 +13,11 @@ const launchesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    ro
+    rocket: {
+        type: String,
+        required: true,
+    },
+    target: {
+        type: mongoose.Obj
+    }
 })

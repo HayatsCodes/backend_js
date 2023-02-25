@@ -20,7 +20,7 @@ function existLaunchWithId(launchId) {
   return launches.has(launchId);
 }
 
-function getAllLaunches() {
+async function getAllLaunches() {
   return Array.from(launches.values());
 }
 

@@ -64,7 +64,7 @@ async function httpAbortLaunch(req, res) {
 
 
     if(isDeleted) {
-        return res.status(204).json({
+        return res.status(400).json({
             message: "The launch has already been deleted"
         })
     }

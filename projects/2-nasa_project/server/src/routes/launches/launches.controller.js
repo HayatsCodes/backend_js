@@ -54,6 +54,7 @@ async function httpAbortLaunch(req, res) {
     
 
     const existLaunch = await existLaunchWithId(launchId);
+    const 
 
     if(!existLaunch) {
         return res.status(404).json({

@@ -9,11 +9,14 @@
     "watch": "nodemon src/erver.js",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i 2"
-    
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    ""
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^5.3.5",

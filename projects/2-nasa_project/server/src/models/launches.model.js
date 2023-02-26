@@ -81,7 +81,7 @@ async function abortLaunchById(launchId) {
     success: false,
   });
 
-  // return aborted.acknowledged === 1 && aborted.modifiedCount === 1;
+  return aborted.acknowledged === true && aborted.modifiedCount === 1;
 }
 
 module.exports = { 

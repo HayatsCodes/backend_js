@@ -62,7 +62,7 @@ async function httpAbortLaunch(req, res) {
     }
 
     if(!deletedLaunch) {
-        
+        return 
     }
 
     const aborted = await abortLaunchById(launchId);

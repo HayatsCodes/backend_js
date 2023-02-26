@@ -81,7 +81,7 @@ async function abortLaunchById(launchId) {
     success: false,
   });
 
-  return aborted.acknowledged == 1
+  return aborted.acknowledged === 1 a
   // const aborted = await launchesDatabase.findOne({
   //   flightNumber: launchId
   // });

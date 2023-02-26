@@ -81,6 +81,9 @@ async function abortLaunchById(launchId) {
     success: false,
   });
 
+  console.log('ack',aborted.acknowledged === true)
+  console.log(aborted.modifiedCount === 1)
+
   return aborted.acknowledged === true && aborted.modifiedCount === 1;
 }
 

@@ -81,13 +81,7 @@ async function abortLaunchById(launchId) {
     success: false,
   });
 
-  return aborted.acknowledged === 1 a
-  // const aborted = await launchesDatabase.findOne({
-  //   flightNumber: launchId
-  // });
-  // aborted.upcoming = false;
-  // aborted.success = false;
-  // return aborted;
+  return (aborted.acknowledged === 1 && aborted.modifiedCount === 1);
 }
 
 module.exports = { 

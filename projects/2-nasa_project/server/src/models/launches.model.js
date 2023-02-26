@@ -25,8 +25,12 @@ async function existLaunchWithId(launchId) {
   return await launchesDatabase.findOne({flightNumber: launchId});
 }
 
-async function deletedLaunch() {
-  
+async function deletedLaunch(launchId) {
+  return await launchesDatabase.findOne({
+    flightNumber: launchId,
+    upcoming: false,
+    success
+  })
 }
 
 async function getLatestFlightNumber() {

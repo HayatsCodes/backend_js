@@ -29,8 +29,8 @@ async function deletedLaunch(launchId) {
   return await launchesDatabase.findOne({
     flightNumber: launchId,
     upcoming: false,
-    success
-  })
+    success: false,
+  });
 }
 
 async function getLatestFlightNumber() {

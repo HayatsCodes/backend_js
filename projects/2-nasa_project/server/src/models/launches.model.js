@@ -95,7 +95,7 @@ async function abortLaunchById(launchId) {
 
 module.exports = { 
   existLaunchWithId,
-  dele
+  deletedLaunch,
   getAllLaunches,
   scheduleNewLaunch,
   abortLaunchById,

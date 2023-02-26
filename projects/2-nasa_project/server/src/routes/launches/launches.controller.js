@@ -2,6 +2,7 @@ const {
     getAllLaunches,
     scheduleNewLaunch,
     existLaunchWithId,
+    deletedLaunch,
     abortLaunchById,
  } = require('../../models/launches.model');
 
@@ -58,6 +59,10 @@ async function httpAbortLaunch(req, res) {
         return res.status(404).json({
             error: `Launch not found`,
         });
+    }
+
+    if(!deletedLaunch) {
+        
     }
 
     const aborted = await abortLaunchById(launchId);

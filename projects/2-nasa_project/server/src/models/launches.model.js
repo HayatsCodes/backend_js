@@ -22,9 +22,12 @@ const launch = {
 
 saveLaunch(launch);
 
+const SPACEX_API_URL = '';
+
 async function loadLaunchesData() {
-  const SPACEX_API_URL 
+  
   console.log('Downloading launch data...');
+  await axios.post(SPACEX_API_URL, )
 }
 
 async function existLaunchWithId(launchId) {

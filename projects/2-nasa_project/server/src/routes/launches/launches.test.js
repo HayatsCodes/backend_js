@@ -23,7 +23,7 @@ describe('Test POST /launch', () => {
         })
         .set("Accept", "application/json")
         .expect("Content-Type", "text/html; charset=utf-8")
-        .expect(500)
+        .expect(200)
     });
 
     test('It should catch missing required properties', () => {});

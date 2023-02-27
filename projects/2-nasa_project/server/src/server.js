@@ -1,7 +1,8 @@
 const http = require('http');
-const mongoose = require('mongoose');
 
 const { app } = require('./app');
+
+const { mongoConnect } = require('./services/mongo')
 
 const { loadPlanetsData } = require('./models/planets.model');
 

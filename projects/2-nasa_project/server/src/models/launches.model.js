@@ -36,7 +36,8 @@ async function loadLaunchesData() {
                 select: {
                     name: 1
                 }
-            }
+            },
+            
         ]
     }
 });

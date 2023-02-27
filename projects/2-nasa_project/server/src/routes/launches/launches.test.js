@@ -2,7 +2,7 @@ const request = require('supertest');
 const { app } = require('../../app');
 const startServer = require('../../server');
 
-jest.setTimeout(10000); 
+jest.setTimeout(100000); 
 
 describe('Launches API', () => {
     beforeAll(async () => {

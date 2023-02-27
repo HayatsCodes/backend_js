@@ -1,12 +1,10 @@
 const request = require('supertest');
 const { app } = require('../../app');
-const startServer = require('../../server');
-
-jest.setTimeout(50000); 
+const { mongoConnect } = require('../../services/mongo');
 
 describe('Launches API', () => {
     beforeAll(async () => {
-        await startServer();
+        await mongoConnect();
     });
 
     describe('Test GET /launches', () => {

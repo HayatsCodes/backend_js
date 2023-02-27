@@ -47,7 +47,7 @@ async function loadLaunchesData() {
     }
 });
 
-  
+  const launchDat
 }
 
 async function existLaunchWithId(launchId) {

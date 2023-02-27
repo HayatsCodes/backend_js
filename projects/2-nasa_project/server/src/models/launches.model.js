@@ -21,7 +21,7 @@ const launch = {
 saveLaunch(launch);
 
 async function loadLaunchesData() {
-  console.log('')
+  console.log('Downloading launch data...');
 }
 
 async function existLaunchWithId(launchId) {
@@ -97,6 +97,7 @@ async function abortLaunchById(launchId) {
 }
 
 module.exports = { 
+  loadLaunchesData,
   existLaunchWithId,
   deletedLaunch,
   getAllLaunches,

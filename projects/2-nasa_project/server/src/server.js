@@ -11,7 +11,6 @@ const server = http.createServer(app);
 
 
 
-mongoose.set('strictQuery', false);
 
 async function startServer() {
     await 

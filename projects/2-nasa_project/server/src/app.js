@@ -3,9 +3,8 @@ const path = require('path');
 const cors = require('cors');
 const morgan = require('morgan');
 
+const api = require('./routes/api');
 
-
-// const { launches } = require('./models/launches.model');
 
 const app = express();
 

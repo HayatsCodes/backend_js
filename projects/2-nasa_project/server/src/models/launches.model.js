@@ -20,6 +20,9 @@ const launch = {
 
 saveLaunch(launch);
 
+async function loadLaunchesData() {
+  console.log('')
+}
 
 async function existLaunchWithId(launchId) {
   return await launchesDatabase.findOne({flightNumber: launchId});

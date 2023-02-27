@@ -23,6 +23,7 @@ const launch = {
 saveLaunch(launch);
 
 async function loadLaunchesData() {
+  const SPACEX_API_URL 
   console.log('Downloading launch data...');
 }
 

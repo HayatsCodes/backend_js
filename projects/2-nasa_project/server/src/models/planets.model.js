@@ -22,7 +22,7 @@ function loadPlanetsData() {
                 }
             })
             .on('error', (err) => {
-                console(err);
+                console.log(err);
                 reject(err);
             })
             .on('end', async () => {
@@ -57,5 +57,4 @@ async function savePlanet(planet) {
 
 module.exports = {
     loadPlanetsData,
-    getAllPlanets,
-}
+    getAllPlanets,

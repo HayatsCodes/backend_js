@@ -57,4 +57,5 @@ async function savePlanet(planet) {
 
 module.exports = {
     loadPlanetsData,
-    getAllPlanets,
+    getAllPlanets,
+}

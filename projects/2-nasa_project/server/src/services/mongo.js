@@ -14,6 +14,8 @@ mongoose.set('strictQuery', false);
 
 async function mongoConnect() {
     await mongoose.connect(MONGO_URL, {
+        bufferMaxEntries: 0, // disable buffering
+        bufferCommands: false, // disable command buffering
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });

@@ -30,7 +30,10 @@ async function loadLaunchData() {
     rocket: 'Falcon 1',
     mission: 'FalconSat',
   });
-  if (firstLaunch)
+  if (firstLaunch) {
+    console.log('Launch data already loaded');
+    return;
+  }
   console.log('Downloading launch data...');
   const response = await axios.post(SPACEX_API_URL, {
     query: {},

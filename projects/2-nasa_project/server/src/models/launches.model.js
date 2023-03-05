@@ -77,6 +77,8 @@ async function loadLaunchData() {
   });
   if (firstLaunch) {
     console.log('Launch data already loaded');
+  } else {
+    await populateLaunches();
   }
   
 }

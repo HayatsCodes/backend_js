@@ -64,6 +64,8 @@ async function populateLaunches () {
       customers,
     };
     console.log(`${launch.flightNumber} ${launch.mission}`);
+
+    // TODO: populate launches collection...
   }
 }
 
@@ -75,7 +77,6 @@ async function loadLaunchData() {
   });
   if (firstLaunch) {
     console.log('Launch data already loaded');
-    return;
   }
   
 }

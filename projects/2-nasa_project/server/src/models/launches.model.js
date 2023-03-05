@@ -34,7 +34,26 @@ async function loadLaunchData() {
     console.log('Launch data already loaded');
     return;
   }
- 
+  console.log('Downloading launch data...');
+  const response = await axios.post(SPACEX_API_URL, {
+    query: {},
+    options: {
+      pagination: false,
+        populate: [
+            {
+                path: 'rocket',
+                select: {
+                    name: 1
+                }
+            },
+            {
+              path: 'payloads',
+              select: {
+                'customers': 1
+              }
+            }
+        ]
+    }
 });
 
   const launchDocs = response.data.docs

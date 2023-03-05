@@ -47,6 +47,8 @@ async function populateLaunches () {
     }
 });
 
+
+
   const launchDocs = response.data.docs
 
   for (const launchDoc of launchDocs) {

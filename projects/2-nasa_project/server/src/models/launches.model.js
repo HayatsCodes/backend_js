@@ -24,7 +24,7 @@ saveLaunch(launch);
 
 const SPACEX_API_URL = 'https://api.spacexdata.com/v4/launches/query';
 
-async function loadLaunchesData() {
+async function loadLaunchData() {
   
   console.log('Downloading launch data...');
   const response = await axios.post(SPACEX_API_URL, {
@@ -140,7 +140,7 @@ async function abortLaunchById(launchId) {
 }
 
 module.exports = { 
-  loadLaunchesData,
+  loadLaunchData,
   existLaunchWithId,
   deletedLaunch,
   getAllLaunches,

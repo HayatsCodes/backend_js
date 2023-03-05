@@ -73,7 +73,7 @@ async function findLaunch(filter) {
 }
 
 async function existLaunchWithId(launchId) {
-  return await launchesDatabase.findOne({flightNumber: launchId});
+  return await findLaunch({flightNumber: launchId});
 }
 
 async function deletedLaunch(launchId) {

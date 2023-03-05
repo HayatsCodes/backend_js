@@ -30,6 +30,7 @@ async function loadLaunchData() {
   const response = await axios.post(SPACEX_API_URL, {
     query: {},
     options: {
+      pagination: false,
         populate: [
             {
                 path: 'rocket',
@@ -66,6 +67,8 @@ async function loadLaunchData() {
     console.log(`${launch.flightNumber} ${launch.mission}`);
   }
 }
+
+async function findLa
 
 async function existLaunchWithId(launchId) {
   return await launchesDatabase.findOne({flightNumber: launchId});

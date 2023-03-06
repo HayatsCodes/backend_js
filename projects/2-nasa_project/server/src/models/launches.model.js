@@ -124,7 +124,7 @@ async function getAllLaunches(skip, limit) {
 }
 
 async function saveLaunch(launch) {
-  await launchesDatabase.findOneAndUpdate({
+  await launchesDatabase.findOneAndUpdate({ 
     flightNumber: launch.flightNumber,
   }, launch, {
     upsert: true,

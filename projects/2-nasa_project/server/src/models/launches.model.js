@@ -119,12 +119,13 @@ async function getLatestFlightNumber() {
 async function getAllLaunches(skip, limit) {
   return await launchesDatabase
   .find({}, {'_id': 0, '__v': 0,})
+  .sort({flightNumber})
   .skip(skip)
   .limit(limit);
 }
 
 async function saveLaunch(launch) {
-  await launchesDatabase.findOneAndUpdate({ 
+  await launchesDatabase.findOneAndUpdate({
     flightNumber: launch.flightNumber,
   }, launch, {
     upsert: true,

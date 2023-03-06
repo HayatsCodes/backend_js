@@ -14,8 +14,8 @@ const {
  const habitablePlanets = getAllPlanets();
 
 async function httpGetAllLaunches(req, res) {
-    const { skip, limit } = getPagination()
-    const allLaunches = await getAllLaunches();
+    const { skip, limit } = getPagination(req.query);
+    const allLaunches = await getAllLaunches(skip, limit);
     return await res.status(200).json(allLaunches);
 }
 

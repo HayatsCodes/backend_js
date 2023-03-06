@@ -8,13 +8,13 @@ const {
 
  const {
     getPagination
- } =
+ } = require('../../services/query');
 
  const { getAllPlanets } = require('../../models/planets.model');
  const habitablePlanets = getAllPlanets();
 
 async function httpGetAllLaunches(req, res) {
-    const { page, limit } = req.query;
+    const { skip, limit } = getPagination()
     const allLaunches = await getAllLaunches();
     return await res.status(200).json(allLaunches);
 }

@@ -15,7 +15,7 @@ const app = express();
 
 
 
-app.get('/secret', checkLoggedIn, (req, res) => {
+app.get('/secret', (req, res) => {
   return res.send('Your personal secret value is 42!');
 });
 
@@ -25,5 +25,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`listening on port 3000`);
+  console.log(`listening on port ${PORT}`);
 })

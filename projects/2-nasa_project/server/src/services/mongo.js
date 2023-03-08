@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URL = 'mongodb+srv://nasa-api:4jNvIlTndydEdUSN@nasacluster.vkrtqnr.mongodb.net/nasa?retryWrites=true&w=majority';
+const MONGO_URL = process.env.MONGO_URL
 
 
 mongoose.connection.once('open', () => {
@@ -13,7 +13,7 @@ console.error(err));
 mongoose.set('strictQuery', false);
 
 async function mongoConnect() {
-    await mongoose.connect(process.env(Mo), {
+    await mongoose.connect(MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });

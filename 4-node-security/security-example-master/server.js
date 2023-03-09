@@ -18,7 +18,9 @@ const config = {
 };
 
 passport.use(new Strategy({
-  call
+  callbackURL: '/auth/google/callback',
+  clientID: config.CLIENT_ID,
+  clientSecret: config.
 }))
 const app = express();
 

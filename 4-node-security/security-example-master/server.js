@@ -28,6 +28,9 @@ app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 })
 
-https.createServer((req, res) => {
-  
-})
+https.createServer({
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem'),
+}, app).listen(PORT, () => {
+  console.log(`Listening on port ${PORT}...`);
+});

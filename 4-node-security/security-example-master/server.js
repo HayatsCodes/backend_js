@@ -18,8 +18,11 @@ app.use(helmet());
 function checkLoggedIn() {
   const isLoggedIn = true;
   if (!isLoggedIn) {
-    return res.status
+    return res.status(401).json({
+      error: 'You must login!',
+    });
   }
+  next();
 }
 
 app.get('/secret', (req, res) => {

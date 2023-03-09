@@ -46,7 +46,9 @@ function checkLoggedIn(req, res, next) {
   next();
 }
 
-app.get('/auth/google', passport.authenticate);
+app.get('/auth/google', passport.authenticate('google', {
+  scope: ['email'],
+}));
 
 app.get('/auth/google/callback', passport.authenticate('google', {
   failureRedirect: '/failure',

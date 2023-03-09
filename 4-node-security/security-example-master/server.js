@@ -18,7 +18,7 @@ const config = {
 };
 
 passport.use(new Strategy({
-  
+  call
 }))
 const app = express();
 

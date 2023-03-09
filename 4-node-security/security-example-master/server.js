@@ -48,11 +48,11 @@ function checkLoggedIn(req, res, next) {
 
 app.get('/auth/google', (req, res) => {});
 
-app.get('/auth/google/callback', passport.authenticate('google'), {
+app.get('/auth/google/callback', passport.authenticate('google', {
   failureRedirect: '/failure',
   successRedirect: '/',
-  ses
-});
+  session: false,
+}), );
 
 app.get('/auth/logout', (req, res) => {});
 

@@ -4,7 +4,6 @@ const https = require('https');
 const express = require('express');
 const helmet = require('helmet');
 
-require('dotenv').config();
 // const passport = require('passport');
 // const { Strategy } = require('passport-google-oauth20');
 // const cookieSession = require('cookie-session');

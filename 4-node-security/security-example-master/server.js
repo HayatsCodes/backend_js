@@ -10,8 +10,6 @@ const { Strategy } = require('passport-google-oauth20');
 
 require('dotenv').config();
 
-
-
 const PORT = 3000;
 
 const config = {
@@ -19,9 +17,10 @@ const config = {
  CLIENT_SECRET: process.env.CLIENT_SECRET,
 };
 
-
-
+passport.use(new Strategy())
 const app = express();
+
+
 
 app.use(helmet());
 app.use(passport.initialize());

@@ -12,7 +12,8 @@ const helmet = require('helmet');
 const PORT = 3000;
 
 const config = {
-  
+  CLIENT_ID: '579642175033-u73k5rk1m9qke6gj7i59srfelck0kipf.apps.googleusercontent.com',
+  CLIENT_SECRET: '',
 }
 
 const app = express();

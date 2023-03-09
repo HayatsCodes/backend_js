@@ -51,6 +51,7 @@ app.get('/auth/google', (req, res) => {});
 app.get('/auth/google/callback', passport.authenticate('google'), {
   failureRedirect: '/failure',
   successRedirect: '/',
+  ses
 });
 
 app.get('/auth/logout', (req, res) => {});
@@ -59,7 +60,9 @@ app.get('/secret', checkLoggedIn, (req, res) => {
   return res.send('Your personal secret value is 42!');
 });
 
-app.get('/failure', req, res => return res.send('Failed to login'))
+app.get('/failure', (req, res) => {
+  return res.send('Failed to login')
+});
 
 
 app.get('/', (req, res) => {

@@ -23,7 +23,11 @@ const AUTH_OPTIONS = {
   clientSecret: config.CLIENT_SECRET,
 };
 
-passport.use(new Strategy(AUTH_OPTIONS, ));
+function verifyCallback(accessToken, refreshToken, profile, done) {
+  
+}
+
+passport.use(new Strategy(AUTH_OPTIONS, verifyCallback));
 const app = express();
 
 

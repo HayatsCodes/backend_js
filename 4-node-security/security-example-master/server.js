@@ -22,7 +22,7 @@ const config = {
 const app = express();
 
 app.use(helmet());
-app.use
+app.use(passport.initialize());
 
 function checkLoggedIn(req, res, next) {
   const isLoggedIn = true;

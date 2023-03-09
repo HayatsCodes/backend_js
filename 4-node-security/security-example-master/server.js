@@ -38,7 +38,7 @@ passport.serializeUser((user, done) => {
 });
 
 // Reads the session from the cookie
-passport.deserializeUser((obj, done) => {
+passport.deserializeUser((id, done) => {
   done(null, obj);
 });
 

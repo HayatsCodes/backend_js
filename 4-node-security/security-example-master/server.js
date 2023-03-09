@@ -17,7 +17,9 @@ const config = {
  CLIENT_SECRET: process.env.CLIENT_SECRET,
 };
 
-passport.use(new Strategy())
+passport.use(new Strategy({
+  
+}))
 const app = express();
 
 

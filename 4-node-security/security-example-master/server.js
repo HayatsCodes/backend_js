@@ -24,7 +24,7 @@ const AUTH_OPTIONS = {
 };
 
 function verifyCallback(accessToken, refreshToken, profile, done) {
-  console.dir(`Profile: ${profile.id}`);
+  console.dir(`Profile: ${profile}`);
   done(null, profile);
 }
 

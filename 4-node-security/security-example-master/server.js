@@ -15,7 +15,7 @@ const app = express();
 
 app.use(helmet());
 
-function checkLoggedIn() {
+function checkLoggedIn(req) {
   const isLoggedIn = true;
   if (!isLoggedIn) {
     return res.status(401).json({

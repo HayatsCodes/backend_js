@@ -14,7 +14,7 @@ require('dotenv').config();
 const PORT = 3000;
 
 const config = {
- 
+ CLIENT_ID: process.env.
 };
 
 const app = express();

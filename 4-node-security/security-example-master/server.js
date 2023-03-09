@@ -17,11 +17,13 @@ const config = {
  CLIENT_SECRET: process.env.CLIENT_SECRET,
 };
 
-passport.use(new Strategy({
+const AUTH_OPTIONS = {
   callbackURL: '/auth/google/callback',
   clientID: config.CLIENT_ID,
-  clientSecret: config.
-}))
+  clientSecret: config.CLIENT_SECRET,
+};
+
+passport.use(new Strategy(AUTH_OPTIONS))
 const app = express();
 
 

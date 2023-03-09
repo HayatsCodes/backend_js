@@ -39,7 +39,7 @@ passport.serializeUser((user, done) => {
 
 // Reads the session from the cookie
 passport.deserializeUser((id, done) => {
-  done(null, obj);
+  done(null, id);
 });
 
 const app = express();

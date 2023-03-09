@@ -52,7 +52,9 @@ app.get('/auth/google/callback', passport.authenticate('google', {
   failureRedirect: '/failure',
   successRedirect: '/',
   session: false,
-}), );
+}), (req, res) => {
+  console.log('Google called us back!');
+});
 
 app.get('/auth/logout', (req, res) => {});
 

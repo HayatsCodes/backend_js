@@ -11,6 +11,10 @@ const helmet = require('helmet');
 
 const PORT = 3000;
 
+const config = {
+  
+}
+
 const app = express();
 
 app.use(helmet());

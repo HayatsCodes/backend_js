@@ -23,7 +23,7 @@ const AUTH_OPTIONS = {
   clientSecret: config.CLIENT_SECRET,
 };
 
-passport.use(new Strategy(AUTH_OPTIONS, ))
+passport.use(new Strategy(AUTH_OPTIONS, ));
 const app = express();
 
 

@@ -34,6 +34,12 @@ const app = express();
 
 
 app.use(helmet());
+
+app.use(cookieSession({
+  name: 'session',
+  maxAge:
+}))
+
 app.use(passport.initialize());
 
 function checkLoggedIn(req, res, next) {

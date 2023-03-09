@@ -40,8 +40,8 @@ app.use(helmet());
 app.use(cookieSession({
   name: 'session',
   maxAge: 24 * 60 * 60 * 1000,
-  keys: [  ]
-}))
+  keys: [ config.COOKIE_KEY_1, config.COOKIE_KEY_2 ],
+}));
 
 app.use(passport.initialize());
 

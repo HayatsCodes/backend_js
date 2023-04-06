@@ -2,5 +2,8 @@ import http from 'http'
 
 http
     .createServer((req, res) => {
-        res.end()
-    });
+        res.end('Hello world');
+    })
+    .listen(8080, () => {
+        console.log('Server started at ')
+    })

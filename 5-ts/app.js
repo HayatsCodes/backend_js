@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-http.createServer(function (req, res) {
+var http_1 = require("http");
+(0, http_1.createServer)(function (req, res) {
     res.end('Hello world');
 })
     .listen(8080, function () {

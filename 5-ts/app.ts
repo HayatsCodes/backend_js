@@ -1,3 +1,6 @@
 import http from 'http'
 
-http.
+http
+    .createServer((req, res) => {
+        res.end()
+    });

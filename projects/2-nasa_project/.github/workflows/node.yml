@@ -8,4 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
   steps:
-    - uses: 
+    - uses: actions/checkout@v2
+    - name: uses node version 16
+      
